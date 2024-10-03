@@ -44,7 +44,7 @@
 
 
 footer {
-    background-color: #0232B5; /* Cor de fundo azul */
+    background-color: #003399; /* Cor de fundo azul */
     color: white; /* Texto branco */
     padding: 20px 0; /* Espaçamento vertical */
     width: 100%; /* Garante que o footer ocupe toda a largura */
@@ -52,31 +52,30 @@ footer {
 }
 
 .footer-content {
-    display: flex; /* Ativa o flexbox */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-    align-items: center; /* Centraliza os itens verticalmente */
-    max-width: 1200px; /* Largura máxima para centralizar */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0 20px; /* Adiciona padding lateral */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px; 
 }
 
 .p1 {
-    flex: 1; /* Faz o p1 ocupar o espaço necessário para centralização */
-    text-align: center; /* Centraliza o texto no meio */
+    flex: 1; 
+    text-align: center; 
 }
 
 .p2 {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    text-align: right; /* Alinha a lista à direita */
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+    text-align: right; 
 }
 
 .p2 li {
-    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
 }
 
-/* Para evitar espaçamentos indesejados */
 body, html {
     margin: 0;
     padding: 0;
