@@ -18,7 +18,7 @@
     font-style: normal;
     font-size: 36px;
     text-align: center;
-    margin-top: 8%;
+    margin-top: 6%;
     line-height: 0.1; 
 }
 
@@ -29,14 +29,15 @@
     font-size: 45px;
     color: #0232B5;
     text-align: center;
+    margin-bottom: 5.7%;
  
 }
 footer {
-    background-color: #0232B5; /* Cor de fundo azul */
-    color: white; /* Texto branco */
-    padding: 20px 0; /* Espaçamento vertical */
-    width: 100%; /* Garante que o footer ocupe toda a largura */
-    position: relative; /* Para evitar problemas de posicionamento */
+    background-color: #0232B5; 
+    color: white; 
+    padding: 20px 0;
+    width: 100%; 
+    position: relative; 
 }
 
 .footer-content {
