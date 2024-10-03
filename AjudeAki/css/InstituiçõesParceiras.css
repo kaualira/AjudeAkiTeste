@@ -291,3 +291,41 @@ button {
 
 }
 
+footer {
+    background-color: #0232B5; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    padding: 20px 0; /* Espaçamento vertical */
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Para evitar problemas de posicionamento */
+}
+
+.footer-content {
+    display: flex; /* Ativa o flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Centraliza os itens verticalmente */
+    max-width: 1200px; /* Largura máxima para centralizar */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 20px; /* Adiciona padding lateral */
+}
+
+.p1 {
+    flex: 1; /* Faz o p1 ocupar o espaço necessário para centralização */
+    text-align: center; /* Centraliza o texto no meio */
+}
+
+.p2 {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    text-align: right; /* Alinha a lista à direita */
+}
+
+.p2 li {
+    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+}
+
+/* Para evitar espaçamentos indesejados */
+body, html {
+    margin: 0;
+    padding: 0;
+}
