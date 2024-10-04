@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/perfil.css"/>
+    <title>Instituições Parceiras</title>
+    <link rel="stylesheet" href="../css/PaginaVoluntario.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
@@ -24,13 +24,13 @@
             <div id="itens">
                 <ul>
                     <li>
-                        <a href="#" id="itembotao">
+                        <a href="../html/index.html" id="itembotao">
                             <img src="../imgs/navbar/home.png" alt="">
                             <p>HOME</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="itembotao">
+                        <a href="../html/InstituiçõesParceiras.html" id="itembotao">
                             <img src="../imgs/navbar/instituições.png" alt="">
                             <p>INSTITUÍÇÕES PARCEIRAS</p>
                         </a>
@@ -61,45 +61,31 @@
             </div>
         </div>
     </nav>
-<?php
-session_start(); // Iniciar a sessão
-include 'conexao.php';
 
-if (!isset($_SESSION['id_usuario'])) {
-    echo "Você não está logado!";
-    exit;
-}
-
-$id_usuario = $_SESSION['id_usuario']; // ID do usuário logado
-
-// Consulta SQL e exibição dos dados (como no exemplo anterior)
-$sql = "SELECT nome, email, cpf, rg, data_criacao FROM usuarios WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $id_usuario);
-$stmt->execute();
-$stmt->bind_result($nome, $email, $cpf, $rg, $data_criacao);
-
-if ($stmt->fetch()) {
-    echo "<h1 class='titulo'>Dados Pessoais</h1>";
-    echo "<div class= 'D1'>";
-
-echo "<p><strong>Nome Completo:</strong> <input type='text' name='nome' class='forms' value='$nome' ></p>";
-echo "<div class='linha'>
-        <p><strong>Email:</strong> <input type='email' name='email' class='forms' value='$email'></p>
-        <p><strong>Tel:</strong> <input type='text' name='telefone' class='forms' value='$'></p>
-      </div>";
-
-echo "<div class='linha2'>
-        <p><strong>CPF:</strong> <input type='text' name='cpf' class='forms' value='$cpf'></p>
-         <p><strong>RG:</strong> <input type='text' name='rg' class='forms' value='$rg'></p>
-    </div>";
+ <p class="Titulo">Página de Voluntariado</p>
 
 
+ <img src="../imgs/InstituiçõesParceiras/AcolherEProteger.jpeg" class="imagem">
+ <div class="form">
+    <p class="titulo2">DIAS DISPONIVEIS</p>
 
-} else {
-    echo "<p>Usuário não encontrado.</p>";
-}
+ <label for="data">data:</label>
+ <input type="date" id="data" name="data" min="2024-10-01" max="2024-12-31"> 
+ <label for="data"> Horário:</label>
+ <select id="horario" name="horario">
+        <option value="07:00">07:00</option>
+        <option value="08:00">08:00</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+    </select>
+ </div>
+ <button type="submit"  class="botao">Enviar Solitação</button>
 
-$stmt->close();
-$conn->close();
-?>

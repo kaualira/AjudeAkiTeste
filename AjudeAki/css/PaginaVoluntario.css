@@ -8,7 +8,7 @@
 
 body {
     font-family: "Phudu", system-ui;
-    
+    background-color: #FFFFFF;
 }
 
 nav {
@@ -208,66 +208,94 @@ nav {
   }
 
 
-  .titulo {
-    font-size: 3rem; /* Tamanho do título */
+  /* BODY */
+
+body {
+    
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.Titulo {
+    font-size: 3rem; 
     color: #0232B5; 
     font-weight: 600;
     font-family: 'Phudu', sans-serif;
-    font-size: 27px;
+    font-size: 30px;
     margin-left: 260px;
-    padding-top: 20%;
-    text-align: center;
+    padding-top: 60px;
+}
+header {
+    background-color: #0033cc;
+    color: white;
+    padding: 20px 0;
 }
 
-.D1{
-    font-size: 3rem; /* Tamanho do título */
+
+.imagem{
+    width: 15%;
+    height: auto;
+    margin-top: 7%;
+    margin-left: 15%;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+.form{
+    border: 2px solid #0232B5;
+    padding: 20px;         
+    border-radius: 15px;    
+    width: 42%;
+    align-items: center;
+    margin-left: 500px;
+}
+.titulo2{
     color: #0232B5; 
-    font-weight: 500;
-    font-family: 'Phudu', sans-serif;
-    font-size: 27px;
-    text-align: center;
-    border: #0232B5;
-    align-items: center;
+    font-size: 18px;
+ margin-bottom: 2%;
 }
 
-.D1{
-
-    border: #0232B5;
-    align-items: center;
-}
-.D1 p{
-
-    color: #0232B5; 
-    font-weight: 100;
-    font-family: 'Phudu', sans-serif;
-    font-size: 20px;
-    text-align: center;
-    border: #0232B5;
-    align-items: center;
+input[type="date"] {
+background-color: #A2BBFF80;
 }
 
-.forms{
-    border: 2px solid blue; 
-    padding: 5px;           
-    border-radius: 4px;     
-    outline: none;   
-}
-.linha {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Espaço entre os elementos */
-    align-items: center;
-}
-.linha strong {
-    min-width: 80px; /* Largura mínima para os rótulos */
-}
+input[type="time"] {
+    background-color: #A2BBFF80;
+    border-radius: 4px;    
+    margin: 1%;
+    }
 
-.linha2 {
-    display: flex;
-    align-items: center;
-    gap: 20px; /
+select {
+        background-color: #A2BBFF80;  /* Cor de fundo */
+        border-radius: 4px;           /* Arredondamento dos cantos */
+        border: none;
+        margin: 1%;
    
-}
-.linha2 strong {
-    min-width: 80px; 
+       
+    }
+    
+select:focus {
+       background-color: white;
+        border-color: #006064;        /* Mantém a cor da borda */
+        box-shadow: none;             /* Remove o efeito de sombra ao focar */
+    }
+    
+    label {
+        margin-bottom: 50px;      /* Espaçamento entre o label e o input */
+    }
+    
+
+.botao{
+    background-color: #0033cc;
+    color: #FFFFFF;
+    width: 15%;
+    height: 30px;
+    font-family: 'Phudu', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 3%;
+    text-align: center;
+    align-items: center;
+
+  
 }

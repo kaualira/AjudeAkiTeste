@@ -34,18 +34,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $sql_insert_user = "INSERT INTO usuarios (nome, cpf, rg, email, senha) VALUES (?, ?, ?, ?, ?)";
         $stmt_insert_user = $conn->prepare($sql_insert_user);
         $stmt_insert_user->bind_param("sssss", $nome, $cpf, $rg, $email, $senha_criptografada);
+        
 
-        if ($stmt_insert_user->execute()) {
-            $_SESSION['status_cadastro'] = true;
-            echo "Cadastro realizado com sucesso!";
-        } else {
-            echo "Erro ao realizar o cadastro: " . $conn->error;
-        }
-    } else {
-        // As senhas não coincidem
-        echo "As senhas não coincidem. Por favor, tente novamente.";
-    }
-}
+                    // Redireciona para a página de login após o cadastro
+                    header('Location: login.php');
+                    exit;
+                } else {
+                    echo "Erro ao realizar o cadastro: " . $conn->error;
+                }
+            } else {
+                // As senhas não coincidem
+                echo "As senhas não coincidem. Por favor, tente novamente.";
+            }
+        
+        
 
 $conn->close();  // Fechando a conexão
 header('Location: cadastro.php');
