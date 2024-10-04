@@ -241,6 +241,7 @@ header {
     margin-left: 15%; 
     margin-right: 0; 
     margin-top: 70px;
+    margin-bottom: 10%;
 
 }
 
@@ -295,43 +296,43 @@ footer {
     background-color: #0232B5; 
     color: white;
     padding: 20px 0; 
-    width: 100%;
-    position: relative;
+    width: 100%; 
 }
 
 .footer-content {
-    display: flex; /* Ativa o flexbox */
-    justify-content: space-between; /* Distribui o espaço entre os elementos */
-    align-items: center; /* Centraliza os itens verticalmente */
-    max-width: 1200px; /* Largura máxima para centralizar */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 0 20px; /* Adiciona padding lateral */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
 }
 
 .p1 {
-    flex: 1; /* Faz o p1 ocupar o espaço necessário para centralização */
-    text-align: center; /* Centraliza o texto no meio */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    white-space: normal; 
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
 }
 
 .p2 {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-    text-align: right; /* Alinha a lista à direita */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    white-space: normal; 
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
 }
 
 .p2 li {
-    margin-bottom: 5px; /* Espaçamento entre os itens da lista */
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
 }
 
-/* Para evitar espaçamentos indesejados */
 body, html {
+     /* Remove margens e padding da página */
     margin: 0;
     padding: 0;
 }
