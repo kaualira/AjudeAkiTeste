@@ -61,3 +61,45 @@
             </div>
         </div>
     </nav>
+<?php
+session_start(); // Iniciar a sessão
+include 'conexao.php';
+
+if (!isset($_SESSION['id_usuario'])) {
+    echo "Você não está logado!";
+    exit;
+}
+
+$id_usuario = $_SESSION['id_usuario']; // ID do usuário logado
+
+// Consulta SQL e exibição dos dados (como no exemplo anterior)
+$sql = "SELECT nome, email, cpf, rg, data_criacao FROM usuarios WHERE id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $id_usuario);
+$stmt->execute();
+$stmt->bind_result($nome, $email, $cpf, $rg, $data_criacao);
+
+if ($stmt->fetch()) {
+    echo "<h1 class='titulo'>Dados Pessoais</h1>";
+    echo "<div class= 'D1'>";
+
+echo "<p><strong>Nome Completo:</strong> <input type='text' name='nome' class='forms' value='$nome' ></p>";
+echo "<div class='linha'>
+        <p><strong>Email:</strong> <input type='email' name='email' class='forms' value='$email'></p>
+        <p><strong>Tel:</strong> <input type='text' name='telefone' class='forms' value='$'></p>
+      </div>";
+
+echo "<div class='linha2'>
+        <p><strong>CPF:</strong> <input type='text' name='cpf' class='forms' value='$cpf'></p>
+         <p><strong>RG:</strong> <input type='text' name='rg' class='forms' value='$rg'></p>
+    </div>";
+
+
+
+} else {
+    echo "<p>Usuário não encontrado.</p>";
+}
+
+$stmt->close();
+$conn->close();
+?>
