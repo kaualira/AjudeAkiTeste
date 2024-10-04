@@ -293,7 +293,7 @@ nav {
 }
 
 .instituicao img {
-    width: 50%; /* Diminui o tamanho da imagem para 80% da largura do container */
+    width: 50%; 
     height: auto;
     margin-bottom: 5px;
     object-fit: cover; /* Mantém a proporção da imagem dentro do espaço disponível */
@@ -314,4 +314,52 @@ button {
     transform: translateX(-50%);
     width: 190px;
     font-family: "Phudu", system-ui;
+}
+
+
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 20px 0; 
+    width: 100%; 
+
+
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
+}
+
+body, html {
+     /* Remove margens e padding da página */
+    margin: 0;
+    padding: 0;
 }
