@@ -64,7 +64,7 @@
         </div>
     </nav>
 
-    <p class="Titulo">Página de Voluntariado</p>
+    <p class="Titulo">Seja nossa ONG parceira</p>
     <p class="Titulo2">NOS INFORME SOBRE SOBRE SUA ONG</p>
     <form action="SalvarOng.php" method="POST">
     <div class="form">
@@ -74,7 +74,7 @@
         </div>
         <div class="d2">
             <label for="email">E-mail:</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" class="emaill">
             <label for="email">Tel:</label>
             <input type="text" id="tel" name="tel">
         </div>
