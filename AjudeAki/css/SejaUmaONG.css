@@ -210,7 +210,7 @@ nav {
 
   /* BODY */
 
-body {
+  body {
     
     background-color: #FFFFFF;
     text-align: center;
@@ -224,63 +224,65 @@ body {
     font-size: 30px;
     margin-left: 260px;
     padding-top: 60px;
-}
-header {
-    background-color: #0033cc;
-    color: white;
-    padding: 20px 0;
+    margin-bottom: 4%;
 }
 
-
-.imagem{
-    width: 15%;
-    height: auto;
-    margin-top: 7%;
-    margin-left: 15%;
-    text-align: center;
-    margin-bottom: 2%;
-
-}
-.form{
-    border: 2px solid #0232B5;
-    padding: 20px;         
-    border-radius: 15px;    
-    width: 40%;
-    align-items: center;
-    margin-left: 36%;
-
-}
-
-.titulo2{
+.Titulo2 {
+   font-size: 25px;
     color: #0232B5; 
-    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Phudu', sans-serif;
+    margin-left: 260px;
+    padding-top: 60px;
     margin-bottom: 2%;
 }
 
-input[type="date"] {
-background-color: #A2BBFF80;
-width: 35%;
-margin-right: 25%;
+
+.d1 input {
+    width: 50%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
 }
 
+.d2 input {
+    width: 18%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
+}
 
-select {
-        background-color: #A2BBFF80; 
-        border-radius: 4px;          
-        border: none;
-        margin: 1%;
-        width: 35%;
-       
-    }
-    
+.d3 input {
+    width: 18%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+}
 
-    
-    label {
-        margin-bottom: 50px;      
-    }
-    
+.d4 {
+    align-items: center; /* Centraliza o conteúdo da div */
+}
 
-.botao{
+.d4 textarea {
+    height: 200px; 
+    resize: vertical;
+    border: 1.5px solid #0232B5; 
+    width: 50%; 
+    margin: auto; 
+    border-radius: 10px;
+}
+
+.Titulo3 {
+    font-size: 15px;
+     font-family: 'Phudu', sans-serif;
+     margin-left: 260px;
+     padding-top: 60px;
+     margin-bottom: 2%;
+ }
+
+ .botao{
     background-color: #0033cc;
     color: #FFFFFF;
     width: 15%;
@@ -291,10 +293,9 @@ select {
     margin-top: 3%;
     text-align: center;
     align-items: center;
-    margin-bottom: 10%; 
+    margin-bottom: 5%; 
 }
 
-input, .select{
 
-  margin: 0px 50px 0px 0px;
-}
+
+
