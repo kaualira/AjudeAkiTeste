@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para garantir que padding e bordas sejam inclusos no tamanho total dos elementos */
+    
+}
+
+body {
+    font-family: "Phudu", system-ui;
+    background-color: #FFFFFF;
+}
+
+nav {
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+#logo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 70%; /* Ajuste do tamanho da logo */
+}
+
+#lista {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #0232B5;
+    border-radius: 0 20px 0 0;
+}
+
+#perfil {
+    width: 100%;
+    height: 18%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color:darkslategrey; */
+    border-radius: 0 20px 0 0;
+    margin-bottom: 38px;
+    margin-top: 10px;
+}
+
+#perfil a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Phudu", system-ui;
+    position: relative;
+}
+
+#perfil a::after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Largura inicial da linha */
+    left: 50%; /* Começa no centro */
+    bottom: 0; /* Posiciona no fundo do elemento */
+    transition: width 0.4s ease, left 0.4s ease; /* Animação suave */
+}
+
+#perfil a:hover::after {
+    width: 100%; /* Expande a linha para cobrir toda a largura */
+    left: 0; /* Faz com que a linha se estenda para os lados */
+    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+}
+
+#perfil img {
+    width: 50%; /* Tamanho ajustado para o ícone de perfil */
+
+}
+
+#itens {
+    width: 100%;
+    height: 80%;
+    /* background-color: darkcyan; */
+}
+
+#itens ul {
+    width: 100%;
+    height: 50%;
+    /* background-color: dodgerblue; */
+}
+
+#itens li {
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(124, 58, 172); */
+    display: flex;
+    align-items: center; /* Isso alinha o conteúdo (imagem e texto) no centro vertical */
+    margin-bottom: 12px;
+}
+
+#itembotao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s; /* Transição suave para cor e sombra */
+
+}
+
+#itembotao:after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Espessura da linha */
+    width: 0;
+    left: 50%; /* Inicialmente no centro */
+    bottom: -2px; /* Posição abaixo do texto */
+    background-color: #FFFFFF; /* Cor neon branca */
+    transition: width 0.5s, left 0.5s; /* Transição suave para expandir */
+}
+
+#itembotao:hover {
+    color: #FFFFFF; /* Cor neon branca no texto */
+}
+
+#itembotao:hover:after {
+    width: 100%; /* Expande a linha completamente */
+    left: 0; /* Alinha à esquerda quando expandida */
+    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+}
+
+#itens img {
+    width: 10%; /* Ajuste o tamanho da imagem para evitar que ela aumente */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 10%;
+}
+
+#itens p {
+    margin: 0; /* Remova o espaçamento extra do parágrafo */
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+}
+
+#voluntario {
+    height: 45%;
+    width: 100%;
+    /* background-color: mediumorchid; */
+    margin-top: 36px;
+}
+
+#texto {
+    height: 40%;
+    width: 100%;
+    /* background-color: red;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto p {
+    font-size: 20px;
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    
+}
+
+#botao {
+    width: 100%;
+    height: 40%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 18px;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+#botao a:hover {
+    transform: scale(1.1);
+  }
+
+
+  /* BODY */
+
+  body {
+    
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.Titulo {
+    font-size: 3rem; 
+    color: #0232B5; 
+    font-weight: 600;
+    font-family: 'Phudu', sans-serif;
+    font-size: 30px;
+    margin-left: 260px;
+    padding-top: 60px;
+    margin-bottom: 4%;
+}
+
+.Titulo2 {
+   font-size: 25px;
+    color: #0232B5; 
+    font-weight: 500;
+    font-family: 'Phudu', sans-serif;
+    margin-left: 260px;
+    padding-top: 60px;
+    margin-bottom: 2%;
+}
+
+
+.d1 input {
+    width: 50%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
+}
+
+.d2 input {
+    width: 18%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
+}
+
+.d3 input {
+    width: 18%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+}
+
+.d4 {
+    align-items: center; /* Centraliza o conteúdo da div */
+}
+
+.d4 textarea {
+    height: 200px; 
+    resize: vertical;
+    border: 1.5px solid #0232B5; 
+    width: 50%; 
+    margin: auto; 
+    border-radius: 10px;
+}
+
+.Titulo3 {
+    font-size: 15px;
+     font-family: 'Phudu', sans-serif;
+     margin-left: 260px;
+     padding-top: 60px;
+     margin-bottom: 2%;
+ }
+
+ .botao{
+    background-color: #0033cc;
+    color: #FFFFFF;
+    width: 15%;
+    height: 40px;
+    font-family: 'Phudu', sans-serif;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-top: 3%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%; 
+}
+
+
+
+
