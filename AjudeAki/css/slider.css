@@ -1,7 +1,7 @@
 #carrossel {
-    width: 80vw;
-    height: 60vh;
-    margin-left: 20vw;
+    width: 80%;
+    height: 60%;
+    margin-left: 20%;
     /* background-color: rgb(19, 86, 63); */
     overflow: hidden;
     position: relative;
@@ -33,3 +33,20 @@ img {
     align-items: center;
     justify-content: center;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
