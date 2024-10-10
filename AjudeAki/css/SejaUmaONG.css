@@ -237,7 +237,21 @@ nav {
     margin-bottom: 2%;
 }
 
+.d1{
+    margin-left: 9.5%;
+}
+.d2{
+  margin-left: 5%;
+}
 
+.emaill{
+    margin-bottom: 5%;
+
+}
+
+.d3{
+   margin-right:15%;
+}
 .d1 input {
     width: 50%;
     padding: 5px; 
@@ -262,7 +276,7 @@ nav {
 }
 
 .d4 {
-    align-items: center; /* Centraliza o conteúdo da div */
+    align-items: center; 
 }
 
 .d4 textarea {
@@ -272,28 +286,33 @@ nav {
     width: 50%; 
     margin: auto; 
     border-radius: 10px;
+    margin-left: 20%;
 }
 
 .Titulo3 {
-    font-size: 15px;
-     font-family: 'Phudu', sans-serif;
-     margin-left: 260px;
-     padding-top: 60px;
-     margin-bottom: 2%;
+    font-size: 13px;
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 260px;
+     padding-top: 2%;
+     
  }
 
  .botao{
     background-color: #0033cc;
     color: #FFFFFF;
-    width: 15%;
+    width: 11%;
     height: 40px;
     font-family: 'Phudu', sans-serif;
     font-size: 15px;
     border-radius: 10px;
-    margin-top: 3%;
+    margin-top: 2%;
     text-align: center;
     align-items: center;
     margin-bottom: 5%; 
+    margin-left: 18%;
+    
 }
 
 

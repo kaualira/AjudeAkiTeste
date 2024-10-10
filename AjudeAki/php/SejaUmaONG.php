@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instituições Parceiras</title>
+    <title>Seja uma ONG parceira </title>
     <link rel="stylesheet" href="../css/SejaUmaONG.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,7 +64,7 @@
         </div>
     </nav>
 
-    <p class="Titulo">Página de Voluntariado</p>
+    <p class="Titulo">Seja nossa ONG parceira</p>
     <p class="Titulo2">NOS INFORME SOBRE SOBRE SUA ONG</p>
     <form action="SalvarOng.php" method="POST">
     <div class="form">
@@ -74,7 +74,7 @@
         </div>
         <div class="d2">
             <label for="email">E-mail:</label>
-            <input type="text" id="email" name="email">
+            <input type="text" id="email" name="email" class="emaill">
             <label for="email">Tel:</label>
             <input type="text" id="tel" name="tel">
         </div>
