@@ -68,10 +68,8 @@
  <img src="../imgs/InstituiçõesParceiras/AcolherEProteger.jpeg" class="imagem">
  <div class="form">
     <p class="titulo2">DIAS DISPONIVEIS</p>
-
- <label for="data">data:</label>
+    <form action="ProcessaAgendamento.php" method="POST">
  <input type="date" id="data" name="data" min="2024-10-01" max="2024-12-31"> 
- <label for="data"> Horário:</label>
  <select id="horario" name="horario">
         <option value="07:00">07:00</option>
         <option value="08:00">08:00</option>
@@ -88,4 +86,6 @@
     </select>
  </div>
  <button type="submit"  class="botao">Enviar Solitação</button>
+</form>
+
 

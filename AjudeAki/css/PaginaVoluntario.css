@@ -245,43 +245,38 @@ header {
     border: 2px solid #0232B5;
     padding: 20px;         
     border-radius: 15px;    
-    width: 42%;
+    width: 40%;
     align-items: center;
-    margin-left: 500px;
+    margin-left: 36%;
+
 }
+
 .titulo2{
     color: #0232B5; 
     font-size: 18px;
- margin-bottom: 2%;
+    margin-bottom: 2%;
 }
 
 input[type="date"] {
 background-color: #A2BBFF80;
+width: 35%;
+margin-right: 25%;
 }
 
-input[type="time"] {
-    background-color: #A2BBFF80;
-    border-radius: 4px;    
-    margin: 1%;
-    }
 
 select {
-        background-color: #A2BBFF80;  /* Cor de fundo */
-        border-radius: 4px;           /* Arredondamento dos cantos */
+        background-color: #A2BBFF80; 
+        border-radius: 4px;          
         border: none;
         margin: 1%;
-   
+        width: 35%;
        
     }
     
-select:focus {
-       background-color: white;
-        border-color: #006064;        /* Mantém a cor da borda */
-        box-shadow: none;             /* Remove o efeito de sombra ao focar */
-    }
+
     
     label {
-        margin-bottom: 50px;      /* Espaçamento entre o label e o input */
+        margin-bottom: 50px;      
     }
     
 
@@ -289,13 +284,17 @@ select:focus {
     background-color: #0033cc;
     color: #FFFFFF;
     width: 15%;
-    height: 30px;
+    height: 40px;
     font-family: 'Phudu', sans-serif;
     font-size: 15px;
     border-radius: 10px;
     margin-top: 3%;
     text-align: center;
     align-items: center;
+    margin-bottom: 10%; 
+}
 
-  
+input, .select{
+
+  margin: 0px 50px 0px 0px;
 }
