@@ -344,7 +344,7 @@ nav {
 }
 
 .sobretexto {
-    width: 100%;
+    width: 90%;
     height: 80%;
     /* background-color: blueviolet; */
     text-align: center;
@@ -356,7 +356,7 @@ nav {
     flex-direction: column-reverse;
     font-size: 14px;
     p {
-        margin-bottom:20px ;
+        margin-bottom:5px ;
         width: 95%;
     }
 }
@@ -411,7 +411,7 @@ nav {
 footer {
     background-color: #0232B5; 
     color: white;
-    padding: 20px 0; 
+    padding: 10px 0; 
     width: 100%; 
     font-family: "Poppins", system-ui;
     font-weight: 300;
@@ -440,6 +440,7 @@ footer {
     font-family: "Poppins", system-ui;
     font-weight: 300;
     font-style: normal;
+    font-size: 12px;
 }
 
 .p2 {
@@ -452,6 +453,7 @@ footer {
     font-family: "Poppins", system-ui;
     font-weight: 300;
     font-style: normal;
+    font-size: 12px;
 }
 
 .p2 li {
@@ -461,7 +463,7 @@ footer {
 
 .testecaixa {
     border: 1.5px solid #0232B5; 
-    width: 100%;
+    width: 60%;
     height: 100%;
     border-radius: 7px;
 }
