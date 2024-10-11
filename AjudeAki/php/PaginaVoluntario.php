@@ -88,4 +88,17 @@
  <button type="submit"  class="botao">Enviar Solitação</button>
 </form>
 
+<footer>
+    <div class="footer-cote"></div>
+    <div class="footer-content">
+        <p class="p1">©2024 AjudeAKI</p>
+        <ul class="p2">
+            <li>Tell: (11)999999999</li>
+            <li>Email: AjudeAKI@gmail.com</li>
+            <li>Instagram: @ajudeaki_</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
 

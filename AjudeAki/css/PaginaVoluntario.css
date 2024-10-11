@@ -217,13 +217,50 @@ body {
 }
 
 .Titulo {
-    font-size: 3rem; 
+    font-size: 2.5rem; 
     color: #0232B5; 
     font-weight: 600;
     font-family: 'Phudu', sans-serif;
-    font-size: 30px;
     margin-left: 260px;
     padding-top: 60px;
+  
+    /* Responsividade para telas menores */
+    @media (max-width: 1200px) {
+        font-size: 2.5rem;
+        margin-left: 200px;
+    }
+  
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        margin-left: 100px;
+        padding-top: 40px;
+    }
+  
+    @media (max-width: 480px) {
+        font-size: 1.5rem;
+        margin-left: 20px;
+        padding-top: 20px;
+    }
+
+    /* margin-left: 50%;  */
+
+    /* font-size: 2.5rem;
+    color: #0232B5;
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    margin-left: 24vw; 
+    width: calc(100% - 20vw);
+    max-width: 900px;
+    display: flex; */
+
+
+    /* align-items: center; */
+
+
 }
 header {
     background-color: #0033cc;
@@ -239,6 +276,7 @@ header {
     margin-left: 15%;
     text-align: center;
     margin-bottom: 2%;
+    margin-top: 3%;
 
 }
 .form{
@@ -247,8 +285,12 @@ header {
     border-radius: 15px;    
     width: 40%;
     align-items: center;
-    margin-left: 36%;
+    margin-left: 39%;
 
+    
+
+
+    
 }
 
 .titulo2{
@@ -281,7 +323,7 @@ select {
     
 
 .botao{
-    background-color: #0033cc;
+    background-color: #0232B5;
     color: #FFFFFF;
     width: 15%;
     height: 40px;
@@ -290,11 +332,75 @@ select {
     border-radius: 10px;
     margin-top: 3%;
     text-align: center;
+/* 
     align-items: center;
-    margin-bottom: 10%; 
+    justify-content: center; */
+    max-width: 15%;
+    margin-left: 50%; 
+    width: calc(100% - 20vw);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+
 }
 
 input, .select{
 
   margin: 0px 50px 0px 0px;
+}
+
+
+
+footer {
+    margin-top: 5%;
+    background-color: #0232B5; 
+    color: white;
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+font-weight: 300;
+font-style: normal;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+font-weight: 300;
+font-style: normal;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
+}
+
+body, html {
+     /* Remove margens e padding da página */
+    margin: 0;
+    padding: 0;
 }
