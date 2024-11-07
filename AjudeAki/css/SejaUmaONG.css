@@ -182,14 +182,17 @@
 }
 
 
-
+body {
+    font-family: "Phudu", system-ui;
+    background-color: #FFFFFF;
+}
   /* BODY */
-
+/* 
   body {
     
     background-color: #FFFFFF;
     text-align: center;
-}
+} */
 
 .Titulo {
     font-size: 3rem; 
