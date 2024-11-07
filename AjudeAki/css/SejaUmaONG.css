@@ -197,7 +197,8 @@
     font-weight: 600;
     font-family: 'Phudu', sans-serif;
     font-size: 30px;
-    margin-left: 260px;
+    text-align: center;
+    margin: 0 auto;
     padding-top: 60px;
     margin-bottom: 4%;
 }
@@ -207,13 +208,15 @@
     color: #0232B5; 
     font-weight: 500;
     font-family: 'Phudu', sans-serif;
-    margin-left: 260px;
+    text-align: center;
+    margin: 0 auto;
     padding-top: 60px;
     margin-bottom: 2%;
 }
 
 .d1{
-    margin-left: 9.5%;
+    text-align: center;
+    margin: 0 auto;
 }
 .d2{
   margin-left: 5%;
@@ -225,7 +228,8 @@
 }
 
 .d3{
-   margin-right:15%;
+   margin-right:31%;
+   
 }
 .d1 input {
     width: 50%;
@@ -236,7 +240,7 @@
 }
 
 .d2 input {
-    width: 18%;
+    width: 25%;
     padding: 5px; 
     border: 1.3px solid #0232B5; 
     border-radius: 10px; 
@@ -244,7 +248,7 @@
 }
 
 .d3 input {
-    width: 18%;
+    width: 21%;
     padding: 5px; 
     border: 1.3px solid #0232B5; 
     border-radius: 10px; 
@@ -254,14 +258,19 @@
     align-items: center; 
 }
 
+.tel{
+    width: 21%;
+}
+
 .d4 textarea {
     height: 200px; 
     resize: vertical;
     border: 1.5px solid #0232B5; 
     width: 50%; 
-    margin: auto; 
     border-radius: 10px;
     margin-left: 20%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .Titulo3 {
@@ -269,8 +278,9 @@
     font-family: "Poppins", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-left: 260px;
-     padding-top: 2%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2%;
      
  }
 
@@ -286,7 +296,7 @@
     text-align: center;
     align-items: center;
     margin-bottom: 5%; 
-    margin-left: 18%;
+    margin-right: 2%;
     
 }
 

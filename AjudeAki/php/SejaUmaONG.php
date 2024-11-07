@@ -72,10 +72,10 @@
             <label for="email">E-mail:</label>
             <input type="text" id="email" name="email" class="emaill">
             <label for="email">Tel:</label>
-            <input type="text" id="tel" name="tel">
+            <input type="text" id="tel" name="tel" class="tel">
         </div>
         <div class="d3">
-            <label for="cnpj">CNPJ</label>
+            <label for="cnpj">CNPJ:</label>
             <input type="text" id="cnpj" name="cnpj">
         </div>
     </div>
