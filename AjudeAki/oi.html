@@ -1,10 +1,54 @@
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    
-}
-/*  */
+<nav class="navbar">
+    <div class="blocologo">
+        <img src="../imgs/navbar/semfundo.png" alt="Logo">
+    </div>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <div class="seuperfil">
+                    <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                    <span class="item-text">SEU PERFIL</span>
+                </div>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/home.png" alt="home" class="home">
+                <span class="item-text">HOME</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+            </a>
+        </li>
+    </ul>
+    <div class="caixapergunta">
+        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+        <div class="botao">
+            <a href="#" id="botao">
+                CLIQUE AQUI
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<!--  -->
+
 * {
     margin: 0;
     padding: 0;
@@ -186,147 +230,4 @@
 
 .botao a:hover {
     transform: scale(1.1);
-}
-/*  */
-
-body {
-    font-family: "Phudu", system-ui;
-    background-color: #FFFFFF;
-}
-
-
-
-  /* BODY */
-
-body {
-    
-    background-color: #FFFFFF;
-    text-align: center;
-}
-
-.Titulo {
-    font-size: 3rem; /* Tamanho do título */
-    color: #0232B5; 
-    font-weight: 600;
-    font-family: 'Phudu', sans-serif;
-    font-size: 30px;
-    margin-left: 260px;
-    padding-top: 60px;
-}
-header {
-    background-color: #0033cc;
-    color: white;
-    padding: 20px 0;
-}
-
-.instituicoes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end; 
-    padding: 20px;
-    gap: 40px;
-    max-width: 80%; 
-    margin-left: 15%; 
-    margin-right: 0; 
-    margin-top: 70px;
-    margin-bottom: 10%;
-
-}
-
-.instituicao {
-    background-color: white;
-    border: 1px solid #ddd;
-    width: 250px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Para posicionamento do botão */
-    border-color: #0232B5;
-    border-width: 1px;
-
-}
-
-.instituicao p {
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #333;
-    font-family: "Phudu", system-ui;
-    font-style: normal;
-    font-optical-sizing: auto;
-}
-
-.instituicao img {
-    width: 50%; /* Diminui o tamanho da imagem para 80% da largura do container */
-    height: auto;
-    margin-bottom: 5px;
-    object-fit: cover; /* Mantém a proporção da imagem dentro do espaço disponível */
-    
-}
-
-button {
-    background-color: #0033cc;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    position: absolute;
-    left: 50%;
-    bottom: -20px; /* Para que o botão fique meio para fora */
-    transform: translateX(-50%);
-    width: 190px;
-    font-family: "Phudu", system-ui;
-
-}
-
-footer {
-    background-color: #0232B5; 
-    color: white;
-    padding: 20px 0; 
-    width: 100%; 
-}
-
-.footer-content {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-    position: relative; 
-}
-
-.p1 {
-    /* Centraliza */
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%); 
-    text-align: center; 
-    font-family: "Poppins", system-ui;
-font-weight: 300;
-font-style: normal;
-}
-
-.p2 {
-     /* Remove marcadores e margens, alinha à direita */
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    text-align: right; 
-    margin-left: auto; 
-    font-family: "Poppins", system-ui;
-font-weight: 300;
-font-style: normal;
-}
-
-.p2 li {
-    /* Espaçamento entre os itens da lista */
-    margin-bottom: 5px; 
-}
-
-body, html {
-     /* Remove margens e padding da página */
-    margin: 0;
-    padding: 0;
 }
