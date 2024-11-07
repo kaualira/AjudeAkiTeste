@@ -1,73 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AjudeAki</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/slider.css">
+    <!-- <link rel="stylesheet" href="slide.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet"> -->
+
 </head>
 <body>
-    <nav>
-        <div id="logo">
+    <nav class="navbar">
+        <div class="blocologo">
             <img src="../imgs/navbar/semfundo.png" alt="Logo">
         </div>
-        <div id="lista">
-            <div id="perfil">
-                <a href="#">
-                    <img src="../imgs/navbar/PerfilBranco.png" alt="Perfil">
-                    <p>MEU PERFIL</p>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div class="seuperfil">
+                        <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                        <span class="item-text">SEU PERFIL</span>
+                    </div>
                 </a>
-            </div>
-            <div id="itens">
-                <ul>
-                    <li>
-                        <a href="#" id="itembotao">
-                            <img src="../imgs/navbar/home.png" alt="">
-                            <p>HOME</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../html/InstituiçõesParceiras.html" id="itembotao">
-                            <img src="../imgs/navbar/instituições.png" alt="">
-                            <p>INSTITUÍÇÕES PARCEIRAS</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="itembotao">
-                            <img src="../imgs/navbar/dinheiro.png" alt="">
-                            <p>DOAR EM DINHEIRO</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="itembotao">
-                            <img src="../imgs/navbar/voluntário.png" alt="">
-                            <p>SEJA UM VOLUNTÁRIO</p>
-                        </a>
-                    </li>
-                </ul>
-                <div id="voluntario">
-                    <div id="texto">
-                        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
-                    </div>
-                    <div id="botao">
-                        <a href="#" id="botao">
-                            CLIQUE AQUI
-                        </a>
-                    </div>
-                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../imgs/navbar/home.png" alt="home" class="home">
+                    <span class="item-text">HOME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                    <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                    <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                    <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+                </a>
+            </li>
+        </ul>
+        <div class="caixapergunta">
+            <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+            <div class="botao">
+                <a href="#" id="botao">
+                    CLIQUE AQUI
+                </a>
             </div>
         </div>
     </nav>
-    <div id="nossas-acoes">
+    <div class="nossas-acoes">
         <p>NOSSAS ÚLTIMAS AÇÕES</p>
     </div>
-    
-    <div id="carrossel">
+    <div class="carrossel">
         <main>  
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -89,49 +84,109 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </main>
     </div>
-
-    <div id="necessitadas">
-        <p>INSTITUÍÇÕES MAIS NECESSITADAS HOJE!</p>
+    <div class="nossas-acoes1">
+        <p>INSTITUIÇÕES MAIS NECESSITADAS HOJE</p>
     </div>
-    <div id="cartoes">
+    <div class="cartoes">
         <div class="card2">
-            <img src="../imgs/InstituiçõesParceiras/AcolherEProteger.jpeg" class="card-img2" alt="">
+            <img class="card-img2" src="../imgs/InstituiçõesParceiras/AcolherEProteger.jpeg" alt="">
             <div class="card-body2">
-                <h1 class="card-title2">NYC</h1>
-                <p class="card-sub-title2">new your city</p>
-                <p class="card-info2">  nihil itaque, ex harum soluta, reiciendis illum?</p>
-        
-                <button class="card-btn2">Conheça a Instituição!</button>
+                <h1 class="card-title2">Acolher e Proteger</h1>
+                <p class="card-info2">A Acolher & Proteger visa resgatar animais em situação de abandono 
+                    e promover o cuidado a crianças em risco.</p>
+                <a class="card-btn2" href="../html/InstituiçõesParceiras.html">Conheça a Instituição!</a>
             </div>
         </div>
         <div class="card2">
-            <img src="../imgs/InstituiçõesParceiras/AmigosDaVida.jpeg" class="card-img2" alt="">
+            <img class="card-img2" src="../imgs/InstituiçõesParceiras/AmigosDaVida.jpeg" alt="">
             <div class="card-body2">
-                <h1 class="card-title2">NYC</h1>
-                <p class="card-sub-title2">new your city</p>
-                <p class="card-info2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non laboriosam tenetur! Molestiae sapiente ut enim quibusdam asperiores nihil itaque, ex harum soluta, reiciendis illum?</p>
-        
-                <button class="card-btn2">book tour</button>
+                <h1 class="card-title2">Amigos da Vida</h1>
+                <p class="card-info2">Amigos da Vida tem como missão oferecer um lar temporário e cuidados
+                    a animais necessitados.</p>
+                <a class="card-btn2" href="../html/InstituiçõesParceiras.html">Conheça a Instituição!</a>
             </div>
         </div>
         <div class="card2">
-            <img src="../imgs/InstituiçõesParceiras/AmorEmQuatroPatas.jpeg" class="card-img2" alt="">
+            <img class="card-img2" src="../imgs/InstituiçõesParceiras/AmorEmQuatroPatas.jpeg" alt="">
             <div class="card-body2">
-                <h1 class="card-title2">NYC</h1>
-                <p class="card-sub-title2">new your city</p>
-                <p class="card-info2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non laboriosam tenetur! Molestiae sapiente ut enim quibusdam asperiores nihil itaque, ex harum soluta, reiciendis illum?</p>
-        
-                <button class="card-btn2">book tour</button>
+                <h1 class="card-title2">Amor em Duas Patas</h1>
+                <p class="card-info2">O Amor em Duas Patas atua na proteção e adoção de animais, além de 
+                    apoiar crianças em situações difíceis.</p>
+                <a class="card-btn2" href="../html/InstituiçõesParceiras.html">Conheça a Instituição!</a>
             </div>
         </div>
     </div>
+    <div class="nossas-acoes2">
+        <p>SOBRE NÓS</p>
+    </div>
+    <div class="sobretexto">
+        <p>A AjudaAki nasceu com o propósito de tornar o ato de doar e ser voluntário mais fácil,
+            acessível e confiável. Somos uma plataforma dedicada a conectar pessoas 
+            que desejam fazer
+             a diferença com ONGs e instituições de caridade que precisam de apoio.</p>
 
-    <script src="../javascript/script.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+             <p>Nosso objetivo é simplificar o processo de doação e voluntariado, para que qualquer pessoa,
+            em qualquer lugar, possa contribuir para causas importantes. Por meio da nossa plataforma,
+             você pode escolher uma instituição de sua confiança, fazer uma doação diretamente ou 
+             deixar conosco que nós cuidamos da entrega. Além disso, facilitamos o contato entre
+              voluntários e as ONGs, ajudando quem quer doar seu tempo a se conectar de forma rápida
+               e segura.</p>
+           
+               <p>Trabalhamos de maneira transparente e profissional, garantindo que cada doação chegue ao 
+           seu destino e que todo o processo seja conduzido de forma ética e responsável. Nosso 
+           compromisso é com a confiança e a seriedade, proporcionando a segurança de que cada gesto 
+           de ajuda, seja uma doação ou uma ação voluntária, tem um impacto real e positivo.</p>
+           
+           <p>Na AjudaAki, acreditamos que ajudar o próximo deve ser uma tarefa simples, acessível e, 
+           acima de tudo, feita com o coração. Estamos aqui para facilitar essa jornada, conectando 
+           quem quer ajudar com quem mais precisa.</p>
+    </div>
+    <div class="contato">
+        <div class="contatobox">
+            <div class="contatocaixa">
+                <div class="contatocaixinha">
+                    <img src="../imgs/carrossel/icon-tel.png">
+                    <p>ENTRE EM CONTATO CONOSCO!</p>
+                </div>
+            </div>
+            <div class="testecaixa">
+                <div class="d1">
+                    <label for="email">Nome:</label>
+                    <input type="text" id="email" name="email" class="nomee">
+                    <label for="email" class="email1">E-mail:</label>
+                    <input type="email" id="email" name="email" class="emaill">
+                </div>
+                <div class="d2">
+                    <label for="assusnto">Assunto:</label>
+                    <input type="text" id="cnpj" name="cnpj">
+                </div>
+                <label for="conteudo" class="textoconteudo">Conteudo:</label>
+                <div class="d3">
+                    <textarea id="mensagem" name="mensagem" ></textarea>
+                </div>
+                <button type="submit"  class="botaoc"><a href="#">ENVIAR</a></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-cote"></div>
+        <div class="footer-content">
+            <p class="p1">©2024 AjudeAKI</p>
+            <ul class="p2">
+                <li>Tell: (11)999999999</li>
+                <li>Email: AjudeAKI@gmail.com</li>
+                <li>Instagram: @ajudeaki_</li>
+            </ul>
+        </div>
+    </footer>
     
+    
+    
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>

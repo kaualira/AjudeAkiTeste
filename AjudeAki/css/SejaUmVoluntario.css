@@ -337,18 +337,24 @@ body {
 
 /* Footer */
 footer {
+    margin-top: 10%;
     background-color: #0232B5; 
     color: white;
-    padding: 20px 0; 
-    width: 100%; 
+    padding: 2em; 
+    width: calc(100% - 20vw); /* Corrigido para subtrair a largura da navbar corretamente */
+    height: auto; /* Deixe a altura ser ajustada automaticamente com base no conteúdo */
+    position: relative;
+    flex-grow: 1; 
+    margin: 0%;
+    
 }
 
 .footer-content {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    max-width: 1200px; 
-    margin: 0 auto; 
+    
+    
     padding: 0 20px; 
     position: relative; 
 }
@@ -385,4 +391,6 @@ body, html {
      /* Remove margens e padding da página */
     margin: 0;
     padding: 0;
+    min-height: 100vh; 
+    /* height: 100%; */
 }
