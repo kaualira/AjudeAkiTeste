@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+
 .navbar {
     position: fixed;
     bottom: 0;
@@ -159,7 +164,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
 .botao a {
@@ -484,7 +489,7 @@ img {
     font-family: "Poppins", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-left: 3%;
+    margin-left: 4%;
     }
     
     .d3 textarea {
@@ -507,7 +512,7 @@ img {
     font-family: "Poppins", system-ui;
     font-weight: 400;
     font-style: normal;
-    margin-left: -1%;
+    margin-left: 2%;
     margin-top: -2%;
     }
     
@@ -530,7 +535,7 @@ img {
     border-radius: 20px;
     margin-top: 2%;
     border: none;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     margin-left: 45%;
     a {
         text-decoration: none;
