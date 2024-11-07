@@ -182,17 +182,14 @@
 }
 
 
-body {
-    font-family: "Phudu", system-ui;
-    background-color: #FFFFFF;
-}
+
   /* BODY */
-/* 
+
   body {
     
     background-color: #FFFFFF;
     text-align: center;
-} */
+}
 
 .Titulo {
     font-size: 3rem; 
@@ -277,7 +274,7 @@ body {
      
  }
 
- .botao{
+ .buton{
     background-color: #0033cc;
     color: #FFFFFF;
     width: 11%;

@@ -10,58 +10,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div id="logo">
-            <img src="../imgs/navbar/semfundo.png" alt="Logo">
-        </div>
-        <div id="lista">
-            <div id="perfil">
-                <a href="#">
-                    <img src="../imgs/navbar/PerfilBranco.png" alt="Perfil">
-                    <p>MEU PERFIL</p>
-                </a>
-            </div>
-            <div id="itens">
-                <ul>
-                    <li>
-                        <a href="../html/index.html" id="itembotao">
-                            <img src="../imgs/navbar/home.png" alt="">
-                            <p>HOME</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../html/InstituiçõesParceiras.html" id="itembotao">
-                            <img src="../imgs/navbar/instituições.png" alt="">
-                            <p>INSTITUÍÇÕES PARCEIRAS</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="itembotao">
-                            <img src="../imgs/navbar/dinheiro.png" alt="">
-                            <p>DOAR EM DINHEIRO</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="itembotao">
-                            <img src="../imgs/navbar/voluntário.png" alt="">
-                            <p>SEJA UM VOLUNTÁRIO</p>
-                        </a>
-                    </li>
-                </ul>
-                <div id="voluntario">
-                    <div id="texto">
-                        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
-                    </div>
-                    <div id="botao">
-                        <a href="#" id="botao">
-                            CLIQUE AQUI
-                        </a>
-                    </div>
+<nav class="navbar">
+    <div class="blocologo">
+        <img src="../imgs/navbar/semfundo.png" alt="Logo">
+    </div>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <div class="seuperfil">
+                    <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                    <span class="item-text">SEU PERFIL</span>
                 </div>
-            </div>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/home.png" alt="home" class="home">
+                <span class="item-text">HOME</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+            </a>
+        </li>
+    </ul>
+    <div class="caixapergunta">
+        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+        <div class="botao">
+            <a href="#" id="botao">
+                CLIQUE AQUI
+            </a>
         </div>
-    </nav>
-
+    </div>
+</nav>
  <p class="Titulo">Página de Voluntariado</p>
 
 
@@ -85,7 +80,7 @@
         <option value="18:00">18:00</option>
     </select>
  </div>
- <button type="submit"  class="botao">Enviar Solitação</button>
+ <button type="submit"  class="botao1">Enviar Solitação</button>
 </form>
 
 <footer>

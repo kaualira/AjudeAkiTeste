@@ -86,7 +86,7 @@
             <textarea id="mensagem" name="mensagem" ></textarea>
         </div>
     <p class="Titulo3"> Daremos seguimento por meio do e-mail da instituição, aguarde os próximos passos!</p>
-    <button type="submit"  class="botao">Salvar</button>
+    <button type="submit"  class="buton">Salvar</button>
     </form>
 
     <footer>
