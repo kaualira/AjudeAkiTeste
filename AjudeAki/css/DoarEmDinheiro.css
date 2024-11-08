@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para garantir que padding e bordas sejam inclusos no tamanho total dos elementos */
+}
+
+body {
+    font-family: "Phudu", system-ui;    
+}
+
+/* navbar */
+
+nav {
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    
+}
+
+#logo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 70%; /* Ajuste do tamanho da logo */
+}
+
+#lista {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #0232B5;
+    border-radius: 0 20px 0 0;
+}
+
+#perfil {
+    width: 100%;
+    height: 18%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color:darkslategrey; */
+    border-radius: 0 20px 0 0;
+    margin-bottom: 38px;
+    margin-top: 10px;
+}
+
+#perfil a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Phudu", system-ui;
+    position: relative;
+}
+
+#perfil a::after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Largura inicial da linha */
+    left: 50%; /* Começa no centro */
+    bottom: 0; /* Posiciona no fundo do elemento */
+    transition: width 0.4s ease, left 0.4s ease; /* Animação suave */
+}
+
+#perfil a:hover::after {
+    width: 100%; /* Expande a linha para cobrir toda a largura */
+    left: 0; /* Faz com que a linha se estenda para os lados */
+    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+}
+
+#perfil img {
+    width: 60%; /* Tamanho ajustado para o ícone de perfil */
+
+}
+
+#itens {
+    width: 100%;
+    height: 80%;
+    /* background-color: darkcyan; */
+}
+
+#itens ul {
+    width: 100%;
+    height: 50%;
+    /* background-color: dodgerblue; */
+}
+
+#itens li {
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(124, 58, 172); */
+    display: flex;
+    align-items: center; /* Isso alinha o conteúdo (imagem e texto) no centro vertical */
+    margin-bottom: 12px;
+}
+
+#itembotao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s; /* Transição suave para cor e sombra */
+
+}
+
+#itembotao:after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Espessura da linha */
+    width: 0;
+    left: 50%; /* Inicialmente no centro */
+    bottom: -2px; /* Posição abaixo do texto */
+    background-color: #FFFFFF; /* Cor neon branca */
+    transition: width 0.5s, left 0.5s; /* Transição suave para expandir */
+}
+
+#itembotao:hover {
+    color: #FFFFFF; /* Cor neon branca no texto */
+}
+
+#itembotao:hover:after {
+    width: 100%; /* Expande a linha completamente */
+    left: 0; /* Alinha à esquerda quando expandida */
+    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+}
+
+#itens img {
+    width: 10%; /* Ajuste o tamanho da imagem para evitar que ela aumente */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 10%;
+}
+
+#itens p {
+    margin: 0; /* Remova o espaçamento extra do parágrafo */
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+}
+
+#voluntario {
+    height: 45%;
+    width: 100%;
+    /* background-color: mediumorchid; */
+    margin-top: 36px;
+}
+
+#texto {
+    height: 40%;
+    width: 100%;
+    /* background-color: red;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto p {
+    font-size: 20px;
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    
+}
+
+#botao {
+    width: 100%;
+    height: 40%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+#botao a:hover {
+    transform: scale(1.1);
+  }
+
+#botao a p {
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+/* fim da navbar  */
+
+.doacoes {
+    width: 80vw;
+    font-family: "Poppins", system-ui;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doacoes p{
+    font-size: 30px;
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    color: #0232B5;
+}
+
+.texto p{
+    font-size: 15px;
+    font-family: "Phudu", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 30vw;
+    margin-top: 20px;
+}
+
+.dinheiro {
+    font-size: 24px;
+    font-family: "Phudu", system-ui;
+    font-weight: 400;
+    color: #0232B5;
+    margin-left: 45vw;
+    margin-top: 70px;
+    display: flex;
+}
+
+.etapa1 img {
+    margin-top: 60px;
+    font-family: ;
+    width: 90px;
+    margin-left: 30vw;
+}
+
+.etapa1 p{
+    font-size: 18px;
+    font-family:  "Poppins", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 39vw;
+    margin-top: -6%;
+    display: flex;
+}
+
+.etapa2 img {
+    margin-top: 70px;
+    width: 90px;
+    margin-left: 30vw;
+}
+
+.etapa2 p{
+    font-size: 18px;
+    font-family:  "Poppins", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 39vw;
+    margin-top: -6%;
+}
+
+.etapa3 img {
+    margin-top: 70px;
+    width: 90px;
+    margin-left: 30vw;
+}
+
+.etapa3 p{
+    font-size: 18px;
+    font-family:  "Poppins", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 39vw;
+    margin-top: -6%;
+}
+
