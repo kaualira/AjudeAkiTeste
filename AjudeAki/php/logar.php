@@ -19,7 +19,7 @@ $row = mysqli_num_rows($result);
 if($row == 1) {
 	$usuario_bd = mysqli_fetch_assoc($result);
 	$_SESSION['nome'] = $usuario_bd['nome'];
-	header('Location: perfil.php');
+	header('Location: ../html/index.html');
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
