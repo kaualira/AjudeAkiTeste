@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
 
                     // Redireciona para a página de login após o cadastro
-                    header('Location: login.php');
+                    header('Location: ../html/index.html');
                     exit;
                 } else {
                     echo "Erro ao realizar o cadastro: " . $conn->error;
