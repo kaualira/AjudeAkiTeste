@@ -275,6 +275,7 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 70px;
+   
 
 }
 .T1{
@@ -292,6 +293,7 @@ body {
     position: relative; /* Para posicionamento do botão */
     border-color: #0232B5;
     border-width: 1px;
+   
 
 }
 .sub p{
@@ -331,6 +333,7 @@ button {
     transform: translateX(-50%);
     width: 190px;
     font-family: "Phudu", system-ui;
+   
 }
 
 /*  */
