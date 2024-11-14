@@ -220,7 +220,7 @@
 
 
 
-.dinheiro {
+.dinheiro1 {
     font-size: 24px;
     font-family: "Phudu", system-ui;
     font-weight: 400;
@@ -230,7 +230,7 @@
     width: 100%; /* Garante que o contêiner ocupe toda a largura da tela */
 }
 
-.dinheiro p {
+.dinheiro1 p {
     margin: 0 auto;
     display: inline-block;
     white-space: nowrap; 
@@ -288,3 +288,58 @@
     margin-bottom: 5%;
 }
 
+
+
+
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 10px 0; 
+    width: 100%; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
+}
