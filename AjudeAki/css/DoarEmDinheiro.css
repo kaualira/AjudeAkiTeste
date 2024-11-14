@@ -199,20 +199,25 @@
 .doacoes p{
     font-size: 30px;
     font-family: "Poppins", system-ui;
-    font-weight: 800;
+    font-weight: 700;
     color: #0232B5;
     
 }
 
-.texto p{
+
+.texto p {
     font-size: 15px;
     font-family: "Phudu", system-ui;
-    text-align: left;
+    text-align: center;
     font-weight: 400;
     color: #000000;
-    margin-left: 30vw;
-    margin-top: 20px;
+    max-width: 75%; /* Limita a largura do texto */
+    margin: 10px auto; /* Centraliza o texto */
+    word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
+    margin-bottom: 100px;
+    word-spacing: 2px; /* Reduz o espaçamento entre palavras */
 }
+
 
 
 .dinheiro {
@@ -220,24 +225,32 @@
     font-family: "Phudu", system-ui;
     font-weight: 400;
     color: #0232B5;
-    margin-left: 45vw;
-    margin-top: 70px;
-    display: flex;
+    margin-top: 70px; /* Distância do topo */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura da tela */
 }
+
+.dinheiro p {
+    margin: 0 auto;
+    display: inline-block;
+    white-space: nowrap; 
+
+}
+
 
 .etapa1 img {
     margin-top: 60px;
     width: 90px;
-    margin-left: 30vw;
+    margin-left: 20vw;
 }
 
 .etapa1 p{
-    font-size: 18px;
+    font-size: 15px;
     font-family:  "Poppins", system-ui;
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 39vw;
+    margin-left: 28vw;
     margin-top: -6%;
     display: flex;
 }
@@ -245,32 +258,33 @@
 .etapa2 img {
     margin-top: 70px;
     width: 90px;
-    margin-left: 30vw;
+    margin-left: 20vw;
 }
 
 .etapa2 p{
-    font-size: 18px;
+    font-size: 15px;
     font-family:  "Poppins", system-ui;
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 39vw;
+    margin-left: 28vw;
     margin-top: -6%;
 }
 
 .etapa3 img {
     margin-top: 70px;
     width: 90px;
-    margin-left: 30vw;
+    margin-left: 20vw;
 }
 
 .etapa3 p{
-    font-size: 18px;
+    font-size: 15px;
     font-family:  "Poppins", system-ui;
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 39vw;
+    margin-left: 28vw;
     margin-top: -6%;
+    margin-bottom: 5%;
 }
 
