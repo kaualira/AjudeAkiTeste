@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; /* Para garantir que padding e bordas sejam inclusos no tamanho total dos elementos */
+}
+
+body {
+    font-family: "Phudu", system-ui;
+}
+
+/* navbar */
+
+nav {
+    height: 100vh;
+    width: 20vw;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    
+}
+
+#logo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 70%; /* Ajuste do tamanho da logo */
+}
+
+#lista {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #0232B5;
+    border-radius: 0 20px 0 0;
+}
+
+#perfil {
+    width: 100%;
+    height: 18%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    /* background-color:darkslategrey; */
+    border-radius: 0 20px 0 0;
+    margin-bottom: 38px;
+    margin-top: 10px;
+}
+
+#perfil a {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Phudu", system-ui;
+    position: relative;
+}
+
+#perfil a::after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Largura inicial da linha */
+    left: 50%; /* Começa no centro */
+    bottom: 0; /* Posiciona no fundo do elemento */
+    transition: width 0.4s ease, left 0.4s ease; /* Animação suave */
+}
+
+#perfil a:hover::after {
+    width: 100%; /* Expande a linha para cobrir toda a largura */
+    left: 0; /* Faz com que a linha se estenda para os lados */
+    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+}
+
+#perfil img {
+    width: 60%; /* Tamanho ajustado para o ícone de perfil */
+
+}
+
+#itens {
+    width: 100%;
+    height: 80%;
+    /* background-color: darkcyan; */
+}
+
+#itens ul {
+    width: 100%;
+    height: 50%;
+    /* background-color: dodgerblue; */
+}
+
+#itens li {
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(124, 58, 172); */
+    display: flex;
+    align-items: center; /* Isso alinha o conteúdo (imagem e texto) no centro vertical */
+    margin-bottom: 12px;
+}
+
+#itembotao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s; /* Transição suave para cor e sombra */
+
+}
+
+#itembotao:after {
+    content: "";
+    position: absolute;
+    height: 1px; /* Espessura da linha */
+    width: 0;
+    left: 50%; /* Inicialmente no centro */
+    bottom: -2px; /* Posição abaixo do texto */
+    background-color: #FFFFFF; /* Cor neon branca */
+    transition: width 0.5s, left 0.5s; /* Transição suave para expandir */
+}
+
+#itembotao:hover {
+    color: #FFFFFF; /* Cor neon branca no texto */
+}
+
+#itembotao:hover:after {
+    width: 100%; /* Expande a linha completamente */
+    left: 0; /* Alinha à esquerda quando expandida */
+    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+}
+
+#itens img {
+    width: 10%; /* Ajuste o tamanho da imagem para evitar que ela aumente */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+    margin-left: 10%;
+}
+
+#itens p {
+    margin: 0; /* Remova o espaçamento extra do parágrafo */
+    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
+}
+
+#voluntario {
+    height: 45%;
+    width: 100%;
+    /* background-color: mediumorchid; */
+    margin-top: 36px;
+}
+
+#texto {
+    height: 40%;
+    width: 100%;
+    /* background-color: red;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#texto p {
+    font-size: 20px;
+    text-align: center; /* Centraliza o texto dentro do parágrafo */
+    
+}
+
+#botao {
+    width: 100%;
+    height: 40%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+#botao a:hover {
+    transform: scale(1.1);
+  }
+
+.a {
+    display: flex;
+    width: 162vh;
+    height: 7vw;
+    margin-left: 20vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.a2 {
+    position: absolute;
+    left: 685px;
+    top: 125px;
+    color: #0232B5;
+}
+
+.a3 {
+    position: absolute;
+    left: 1025px;
+    top: 125px;
+    color: #0232B5;
+}
+
+.a p {
+    font-size: 30px;
+    color: #0232B5;
+    font-family: "Phudu", system-ui;
+    font-weight: 700;
+}
+
+.b {
+    display: flex;
+    width: 162vh;
+    height: 15vw;
+    margin-left: 20vw;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.b img {
+    width: 190px;
+    margin-left: -186px;
+}
+
+/* .b p {
+    position: absolute;
+    left: 685px;
+    top: 150px;
+    color: #0232B5;
+} */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 19px; /* Alinhando o dropdown para a esquerda */
+    top: -1px;
+    border: 2px solid #0232B5;
+    border-radius: 8px;
+    width: 240px;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+    padding-right: 57px; /* Espaço para a setinha */
+}
+
+.dropdown::after {
+    content: "▼"; /* Adiciona a setinha */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #0232B5;
+}
+
+.dropdown:hover::after {
+    color: #ddd; /* Cor ao passar o mouse */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    background-color: transparent; /* Torna o fundo transparente */
+    padding: 10px 16px; /* Ajuste o preenchimento conforme necessário */
+}
+
+.dropdown-content a:hover {
+    background-color: #0232B5; /* Mantém o fundo azul ao passar o mouse */
+    color: white; /* Ajusta a cor do texto quando o fundo azul aparece */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+}
+
+.bc {
+    margin-left: 128px;
+    max-width: 174vw;
+}
+
+.container-alinhado {
+    display: flex;
+    align-items: center;
+    margin-left: 300px; /* Alinhando container para a esquerda */
+    gap: 101px;
+}
+
+.input-number {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.input-number label {
+    margin-right: 10px;
+}
+
+.input-number input {
+    width: 160px;
+    height: 60px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: 2px solid #0232B5;
+    border-radius: 14px;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: none;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 180px; /* Aumenta o tamanho para melhor visualização */
+    
+}
+
+.input-container input {
+    width: 100%;
+    height: 50px;
+    background-color: #f1f1f1;
+    color: #000;
+    border: 2px solid #0232B5;
+    border-radius: 16px;
+    font-size: 35px;
+    text-align: center; /* Alinha o texto à direita */
+    padding-right: 10px; /* Adiciona espaço interno à direita */
+    outline: none;
+    box-shadow: none;
+    
+}
+
+.d {
+    display: flex;
+    width: 152vh;
+    height: 35px;
+    margin-left: 45px; /* Ajustando a margem para a esquerda */
+    margin-top: 10px;
+    margin-bottom: 40px;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.d p {
+    margin-left: 406px;
+    font-size: 25px;
+    color: #0232B5;
+    font-family: "Phudu", system-ui;
+    font-weight: 700;
+}
+
+.e {
+    display: flex;
+    width: 64vh;
+    height: 50px;
+    margin-top: 14px;
+    margin-left: 30vw;
+    justify-content: start;
+    align-items: flex-start;
+    border-radius: 21px;
+    border: 2px solid #0232B5; /* Define a borda corretamente */
+}
+
+.e p {
+    margin-top: 1px;
+    margin-left: 22px;
+    color: black;
+    font-size: 18px;
+}
+
+.e img {
+    width: 43px;
+    margin-left: 20px;
+    margin-top: 2px;
+    border-radius: 15px;
+}
+
+.f {
+    display: flex;
+    width: 64vh;
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 30vw;
+    justify-content: start;
+    align-items: flex-start;
+    border-radius: 21px;
+    border: 2px solid #0232B5; /* Define a borda corretamente */
+}
+
+.f p {
+    margin-top: 1px;
+    margin-left: 22px;
+    color: black;
+    font-size: 18px;
+}
+
+.f img {
+    width: 45px;
+    margin-left: 20px;
+    margin-top: 2px;
+    border-radius: 15px;
+}
+
+#itembotaoD {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+
+#itembotaoD:hover {
+    color: #FFFFFF;
+}
+
+#itembotaoD:hover:after {
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 30px #FFFFFF;
+}
+
+/* Ajuste no botão para centralização */
+#botaoDo {
+    margin-left: 435px;
+    margin-top: 35px;
+    width: 45vh;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0232B5;
+    border-radius: 19px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    position: relative;
+    transition: 0.3s;
+}
+
+#botaoDo a {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#botaoDo:hover {
+    background-color: #022093;
+    transform: scale(1.05);
+}
+
+.container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.label-dropdown {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+}
