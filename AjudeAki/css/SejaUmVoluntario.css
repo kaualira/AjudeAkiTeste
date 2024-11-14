@@ -353,27 +353,33 @@ body {
 } */
 
 /* Footer */
+
+
+
 footer {
-    margin-top: 10%;
     background-color: #0232B5; 
     color: white;
-    padding: 2em; 
-    width: calc(100% - 20vw); /* Corrigido para subtrair a largura da navbar corretamente */
-    height: auto; /* Deixe a altura ser ajustada automaticamente com base no conteúdo */
-    position: relative;
-    flex-grow: 1; 
-    margin: 0%;
-    
+    padding: 10px 0; 
+    width: 100%; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+
 }
 
 .footer-content {
     display: flex; 
     justify-content: space-between; 
     align-items: center;
-    
-    
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 0 20px; 
     position: relative; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+
+    
 }
 
 .p1 {
@@ -383,8 +389,9 @@ footer {
     transform: translateX(-50%); 
     text-align: center; 
     font-family: "Poppins", system-ui;
-font-weight: 300;
-font-style: normal;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .p2 {
@@ -395,19 +402,13 @@ font-style: normal;
     text-align: right; 
     margin-left: auto; 
     font-family: "Poppins", system-ui;
-font-weight: 300;
-font-style: normal;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
 }
 
 .p2 li {
     /* Espaçamento entre os itens da lista */
-    margin-bottom: 5px; 
+    margin-bottom: 10px; 
 }
 
-body, html {
-     /* Remove margens e padding da página */
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; 
-    /* height: 100%; */
-}
