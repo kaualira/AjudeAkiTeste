@@ -26,13 +26,13 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../html/index.html" class="nav-link">
                     <img src="../imgs/navbar/home.png" alt="home" class="home">
                     <span class="item-text">HOME</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../html/InstituiçõesParceiras.html" class="nav-link">
                     <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
                     <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
                 </a>
@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../html/SejaUmVoluntario.html" class="nav-link">
                     <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
                     <span class="item-text">SEJA UM VOLUNTÁRIO</span>
                 </a>

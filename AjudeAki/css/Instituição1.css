@@ -182,3 +182,18 @@
 }
 
 /* BODY */
+
+.nome-inst {
+    margin-left: 4em;
+    background-color: aqua;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Phudu", system-ui;
+    color: #0232B5;
+    font-weight: 900;
+    p {
+        font-size: 30px;
+    }
+}

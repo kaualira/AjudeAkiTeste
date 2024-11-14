@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-body {
-    font-family: "Phudu", system-ui;
-    
-}
-
-
 .navbar {
     position: fixed;
     bottom: 0;
@@ -187,205 +181,94 @@ body {
     transform: scale(1.1);
 }
 
-  /*  */
+/* fim da navbar  */
 
-  .subT {
+.doacoes {
+    width: 80vw;
+    font-family: "Poppins", system-ui;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaçamento entre a imagem e o texto */
+    align-items: center;
+}
+
+.doacoes p{
+    font-size: 30px;
+    font-family: "Poppins", system-ui;
+    font-weight: 800;
+    color: #0232B5;
+}
+
+.texto p{
+    font-size: 15px;
+    font-family: "Phudu", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 30vw;
     margin-top: 20px;
-    margin-left: 20vw; /* fazer iguinorar a navbar */
-    white-space: nowrap; /* texto e imagens na mesma linha */
-    width: calc(100% - 20vw); /* Garante que o conteúdo ocupe o espaço total restante sem contar a barra */
-    color: #0232B5;
+}
+
+.dinheiro {
     font-size: 24px;
-    margin-bottom: 5%;
-    margin-top: 30px; 
-    
-}
-.T1{
-    margin-left: 24vw; /* fazer iguinorar a navbar */
-    width: calc(100% - 20vw);
- 
-    max-width: 900px; 
-
-    
-}
-
-
-  /*  */
-
-  .Titulo1 {
-    margin-left: 24vw; 
-    width: calc(100% - 20vw);
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px; /* Ajuste para dar mais espaço no topo */
-    padding-bottom: 5px; /* Reduzir espaço embaixo */
-    text-align: center;
-    margin: 0 auto;
-    
-   
-}
-
-.Titulo {
-    font-size: 2.5rem; /* Aumentar o tamanho para destacar mais */
+    font-family: "Phudu", system-ui;
+    font-weight: 400;
     color: #0232B5;
-    text-align: center;
-    font-family: 'Phudu', sans-serif;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 20px;
-   
-}
-
-
-.instituicoes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end; 
-    padding: 20px;
-    gap: 40px;
-    max-width: 80%; 
-    text-align: center;
-    margin: 0 auto;
+    margin-left: 45vw;
     margin-top: 70px;
-
-}
-.T1{
-    text-align: center;
-    margin: 0 auto;
-}
-
-.instituicao {
-    background-color: white;
-    border: 1px solid #ddd;
-    width: 250px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Para posicionamento do botão */
-    border-color: #0232B5;
-    border-width: 1px;
-
-}
-.sub p{
-    text-align: center;
-    margin: 0 auto;
-}
-
-.instituicao p {
-    font-size: 15px;
-    margin-bottom: 10px;
-    color: #333;
-    font-family: "Phudu", system-ui;
-    font-style: normal;
-    font-optical-sizing: auto;
-    
-}
-
-.instituicao img {
-    width: 50%; 
-    height: auto;
-    margin-bottom: 5px;
-    object-fit: cover; /* Mantém a proporção da imagem dentro do espaço disponível */
-    
-}
-
-button {
-    background-color: #0033cc;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 15px;
-    position: absolute;
-    left: 50%;
-    bottom: -20px; /* Para que o botão fique meio para fora */
-    transform: translateX(-50%);
-    width: 190px;
-    font-family: "Phudu", system-ui;
-}
-
-/*  */
-/* Garante que o footer fique no fim da página */
-/* body, html {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; 
     display: flex;
-    flex-direction: column; 
 }
 
-.main-content {
-    flex-grow: 1; 
+.etapa1 img {
+    margin-top: 60px;
+    font-family: ;
+    width: 90px;
+    margin-left: 30vw;
 }
 
-body {
-    font-family: "Phudu", system-ui;
-    flex-grow: 1; 
-} */
-
-/* Footer */
-footer {
-    margin-top: 10%;
-    background-color: #0232B5; 
-    color: white;
-    padding: 2em; 
-    width: calc(100% - 20vw); /* Corrigido para subtrair a largura da navbar corretamente */
-    height: auto; /* Deixe a altura ser ajustada automaticamente com base no conteúdo */
-    position: relative;
-    flex-grow: 1; 
-    margin: 0%;
-    
+.etapa1 p{
+    font-size: 18px;
+    font-family:  "Poppins", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 39vw;
+    margin-top: -6%;
+    display: flex;
 }
 
-.footer-content {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    
-    
-    padding: 0 20px; 
-    position: relative; 
+.etapa2 img {
+    margin-top: 70px;
+    width: 90px;
+    margin-left: 30vw;
 }
 
-.p1 {
-    /* Centraliza */
-    position: absolute;
-    left: 50%; 
-    transform: translateX(-50%); 
-    text-align: center; 
-    font-family: "Poppins", system-ui;
-font-weight: 300;
-font-style: normal;
+.etapa2 p{
+    font-size: 18px;
+    font-family:  "Poppins", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 39vw;
+    margin-top: -6%;
 }
 
-.p2 {
-     /* Remove marcadores e margens, alinha à direita */
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-    text-align: right; 
-    margin-left: auto; 
-    font-family: "Poppins", system-ui;
-font-weight: 300;
-font-style: normal;
+.etapa3 img {
+    margin-top: 70px;
+    width: 90px;
+    margin-left: 30vw;
 }
 
-.p2 li {
-    /* Espaçamento entre os itens da lista */
-    margin-bottom: 5px; 
+.etapa3 p{
+    font-size: 18px;
+    font-family:  "Poppins", system-ui;
+    text-align: left;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 39vw;
+    margin-top: -6%;
 }
 
-body, html {
-     /* Remove margens e padding da página */
-    margin: 0;
-    padding: 0;
-    min-height: 100vh; 
-    /* height: 100%; */
-}
