@@ -181,19 +181,122 @@
     transform: scale(1.1);
 }
 
-/* BODY */
+/*  */
 
-.nome-inst {
-    margin-left: 4em;
-    background-color: aqua;
-    height: 6em;
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+.container {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+
+ 
+}
+.titulo11 {
+    color: #0232B5;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Phudu', sans-serif;
+    font-size: 24px;
+    
+
+}
+.tt2{
+    color: #0232B5;
+    margin-bottom: 20px;
+
+    font-weight: 200;
+    font-family: 'Phudu', sans-serif;
+
+    font-size: 18px;
     display: flex;
     align-items: center;
+}
+.resumo-doacao {
+    border: 1px solid #0232B5;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: left;
+}
+.resumo-doacao p {
+    margin: 5px 0;
+}
+
+.LE{
+margin-left: -60%;
+}
+.LE img{
+    width: 30%;
+}
+
+.LD{
+    margin-left: 60%;
+    margin-top: -30%;
+}
+.pixlogo{
+    display: flex;
     justify-content: center;
-    font-family: "Phudu", system-ui;
-    color: #0232B5;
-    font-weight: 900;
-    p {
-        font-size: 30px;
-    }
+    margin-bottom: 15px;
+    
+}
+
+.pixLogo img{
+    width: 70%; 
+    height: auto;
+}
+.qr-code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  
+}
+.qr-code img {
+    width: 20%;
+    /* height: 100px; */
+}
+.pix-code {
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+.b1{
+    color: #A09797;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+.b{
+    color: #A09797;
+}
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0232B5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #0232B5;
 }
