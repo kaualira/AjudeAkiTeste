@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AjudeAki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/doacaoPixECartao.css">
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="../imgs/navbar/original.jpg" alt="Logo">
+        </div>
+        <div id="lista">
+            <div id="perfil">
+                <a href="#">
+                    <img src="../imgs/navbar/PerfilBranco.png" alt="Perfil">
+                    <p>MEU PERFIL</p>
+                </a>
+            </div>
+            <div id="itens">
+                <ul>
+                    <li>
+                        <a href="#" id="itembotao">
+                            <img src="../imgs/navbar/home.png" alt="">
+                            <p>HOME</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="itembotao">
+                            <img src="../imgs/navbar/instituições.png" alt="">
+                            <p>INSTITUÍÇÕES PARCEIRAS</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="doacao.html" id="itembotao">
+                            <img src="../imgs/navbar/dinheiro.png" alt="">
+                            <p>DOAR EM DINHEIRO</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="itembotao">
+                            <img src="../imgs/navbar/voluntário.png" alt="">
+                            <p>SEJA UM VOLUNTÁRIO</p>
+                        </a>
+                    </li>
+                </ul>
+                <div id="voluntario">
+                    <div id="texto">
+                        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+                    </div>
+                    <div id="botao">
+                        <a href="#" id="botao">
+                            CLIQUE AQUI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Não preciso nem explicar né? O proprio nome ja diz o que é-->
+    <div class="a">
+        <p>PÁGINA DE DOAÇÃO</p>
+    </div>
+
+    <div class="a2">
+        <p>Selecione o seu tipo de doação</p>
+    </div>
+
+    <div class="a3">
+        <p>Informe o valor</p>
+    </div>
+
+    <div class="b">
+        
+        <div class="container-alinhado">
+            <img src="../imgs/navbar/original.jpg" alt="">
+
+                    
+            <!-- Dropdown principal, que infernal pra fazer, não me pergunta do porque tem um fundo cinza quase invisivel nele, se souber resolver, resolve, se não, não me enche >:( -->
+            <div class="dropdown">
+                
+                <button class="dropbtn">Doar em Dinheiro</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="goToPage('doacaoMateriais.html')">Doar em Material</a>
+                </div>
+            </div>
+            
+            <!-- Input Number, não faz sentido pra mim ter 3 zeros, mas ja que eu só sigo ordens, aqui estou eu, colocando 3 zeros -->
+            <div class="input-number">
+                <label for="idade"></label>
+                <div class="input-container">
+                    <input type="text" name="idade" id="idade" placeholder="R$ 000,00">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A parte do pagamento, é so ler -->
+    <div class="d">
+        <p>MODO DE PAGAMENTO</p>
+    </div>
+    <!-- Botão do pix, vou ter que arrumar depois que as paginas pra linkar estiverem prontas -->
+    <div class="e">
+        <a href="#" id="itembotaoD">
+                <img src="../imgs/doacao/pix.png" alt="">
+                <p>PIX</p>
+        </a>
+    </div>
+    <!-- Botão do cartão, mesma coisa do de cima pra esse -->
+    <div class="f">
+        <a href="#" id="itembotaoD">
+            <img src="../imgs/doacao/credito.jpg" alt="">
+            <p>CARTÃO DE DÉBITO</p>
+        </a>
+    </div>
+    <!-- Mesma coisa que os dois, um pouco mais complicado eu acho, mas eu consigo me virar... eu acho-->
+    <div class="g">
+        <a href="#" id="botaoDo">
+            Seguir para o Pagamento
+        </a>
+    </div>
+
+    <script>
+        // Função pra ir pra outra página
+        function goToPage(page) {
+            window.location.href = page;
+        }
+
+        // Java, se quiser saber o que faz, APRENDE CARALHO!
+        const input = document.getElementById('idade');
+
+        input.addEventListener('input', function() {
+            let value = input.value.replace(/\D/g, ''); // Remove tudo que não é número
+            value = (value / 100).toFixed(2) + '';      // Divide por 100 e bota dois zeros, sacou?
+            value = value.replace('.', ',');            // Troca o ponto por vírgula ô doente. Obs: esse doente é pro Kavs, não se sinta ofendido, ele é meio burro, mas ta se esforçando.
+            input.value = 'R$ ' + value;                // Bota "R$", esse eu não sabia fazer, MUITO OBRIGADO JrDev <3
+        });
+    </script>
+</body>
+</html>
