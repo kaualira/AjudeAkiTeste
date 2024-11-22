@@ -133,8 +133,7 @@ if ($result->num_rows === 1) {
                     <label>Data de Nascimento:</label>
                     <input type="date" name="data_nascimento" value="<?= htmlspecialchars($usuario['data_nascimento'] ?? ''); ?>" required>
                 </div>
-
-              <p class="Titulo3">Endereço</p>
+                <p class="Titulo3">Endereço</p>
                 <div class="d4">
                     <label>Rua:</label>
                     <input type="text" name="rua" value="<?= htmlspecialchars($usuario['rua'] ?? ''); ?>">
@@ -155,7 +154,6 @@ if ($result->num_rows === 1) {
                 <div class="container">
     <button type="submit" class="bbb">Salvar Alterações</button>
 </div>
-
             </form>
         </main>
     </div>

@@ -59,7 +59,7 @@
 </nav>
 <!--  -->
 <div class="CC">
-  <div class="T5"> <p>Solicite um transporte</p> </div>
+  <div class="Titulo"> <p>Solicite um transporte</p> </div>
 
 <div class="bloco"> <!-- Bloco de cima com ligação a pagina de doação 2 -->
     <p class="tb">RESUMO DA DOAÇÃO</p>
@@ -69,31 +69,58 @@
 </div>
 
 <div class="container">
-    <p class="tc">ENDEREÇO</>
+    <p class="titulo2">ENDEREÇO</p>
     <form class="formulario">
-      <div class="linha">
+      <div class="d1">
         <label for="rua">RUA:</label>
         <input type="text" id="rua" name="rua" class="campo">
         <label for="numero">NÚMERO:</label>
         <input type="text" id="numero" name="numero" class="campo pequeno">
       </div>
-      <div class="linha">
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" class="campo">
-      </div>
-      <div class="linha">
+
+      <div class="d3">
         <label for="cidade">CIDADE:</label>
         <input type="text" id="cidade" name="cidade" class="campo">
         <label for="bairro">BAIRRO:</label>
-        <input type="text" id="bairro" name="bairro" class="campo">
+        <input type="text" id="bairro" name="bairro" class="peque">
+      </div>
+      <div class="d2">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" class="campo">
       </div>
       <p class="nota">
-        *Confirmando hoje, nosso transporte irá buscar as doações no dia: <strong>29/09</strong>
-      </p>
-      <button type="submit" class="botao5">CONFIRMAR DOAÇÃO</button>
+        *Confirmando hoje, nosso transporte irá buscar as doações no dia: <strong id="data"></strong></p>
+        <script>
+            // Obtém a data de hoje
+            var dataHoje = new Date();
+        
+            // Adiciona 1 dia à data
+            dataHoje.setDate(dataHoje.getDate() + 1);
+        
+            // Formata a data para o formato desejado (exemplo: dd/mm/yyyy)
+            var dia = dataHoje.getDate().toString().padStart(2, '0');
+            var mes = (dataHoje.getMonth() + 1).toString().padStart(2, '0'); // Mês é zero-indexado
+            var ano = dataHoje.getFullYear();
+        
+            var dataFormatada = dia + '/' + mes + '/' + ano;
+        
+            // Define o conteúdo da tag <strong> com a data formatada
+            document.getElementById('data').textContent = dataFormatada;
+        </script>
+      <button type="submit" class="buton">CONFIRMAR DOAÇÃO</button>
     </form>
   </div>
 </div>
-
+<footer>
+    <div class="footer-cote"></div>
+    <div class="footer-content">
+        <p class="p1">©2024 AjudeAKI</p>
+        <ul class="p2">
+            <li>Tell: (11)999999999</li>
+            <li>Email: AjudeAKI@gmail.com</li>
+            <li>Instagram: @ajudeaki_</li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

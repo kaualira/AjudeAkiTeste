@@ -180,28 +180,30 @@
 .botao a:hover {
     transform: scale(1.1);
 }
-/*  */
+/* BODY */
 
-body{
-    display: flex; /* Ativa o layout flexbox */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center
-}
-.CC{
-    /* justify-content: center; */
-}
-.T5{
-
-    font-size: 2.5rem; /* Aumentar o tamanho para destacar mais */
-    color: #0232B5;
-    text-align: center;
+.Titulo{
+    font-size: 3rem; 
+    color: #0232B5; 
+    font-weight: 600;
     font-family: 'Phudu', sans-serif;
-    font-weight: 700;
-    margin-top: 2%;
-    margin-bottom: 35px;
-    font-size: 24px;
-
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3%;
+    margin-bottom: 4%;
 }
+.titulo2{
+    font-size: 25px;
+     color: #0232B5; 
+     font-weight: 500;
+     font-family: 'Phudu', sans-serif;
+     text-align: center;
+     margin: 0 auto;
+     padding-top: 60px;
+     margin-bottom: 2%;
+}
+
 .bloco{
     padding: 20px ; /* Espaçamento interno */
     border: 5px solid transparent; /* Cria uma borda para a margem colorida */
@@ -213,81 +215,136 @@ body{
     border-radius: 5px;
 
 }
-.tb{
-    color: #0232B5;
+.d1{
     text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
     font-family: 'Phudu', sans-serif;
-    font-weight: 350;
+   
+ }
+ .d1 input {
+    width: 35%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
 }
 
-.cb{
-    text-align: left;
-}
-/*  */
-.container {
-    /* text-align: center; */
-    margin-top: 10%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 600px;
-
+.pequeno {
+    max-width: 4%;
+    gap: 200px; /* Adiciona o espaçamento entre os inputs */
+   
   }
-  
-  .formulario .linha {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-    color: #000000;
-    text-align: center;
-    font-family: 'Phudu', sans-serif;
-    font-weight: 300;
-    font-size: 90%;
-  }
-  
-  /* Campos */
-  .campo {
-    flex: 1;
-    padding: 5px;
-    border: 1px solid #0000cc;
-    border-radius: 4px;
-    font-size: 14px;
+  .d1 label {
     margin-left: 10px;
+}
+.d2 input {
+    width: 20%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
+}
+.d2{
+    font-weight: 400;
+    font-family: 'Phudu', sans-serif;
+    margin-left: 26%;
+  }
+
+  .d3 input {
+    width: 27%;
+    padding: 5px; 
+    border: 1.3px solid #0232B5; 
+    border-radius: 10px; 
+    margin-bottom: 1%;
+    
+}
+.d3{
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    font-family: 'Phudu', sans-serif;  
+
+ }
+ .d3 label {
+    margin-left: 10px;
+}
+ .nota {
+    font-weight: 400;
+    font-family: 'Phudu', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 5%;   
   }
   
-  /* Campo menor */
-  .pequeno {
-    max-width: 80px;
-  }
-  
-  /* Nota */
-  .nota {
-    font-size: 12px;
-    color: #333;
-    margin: 10px 0;
-  }
-  
-  /* Botão */
-  .botao5 {
+.peque{
+    max-width: 12%;
+}
+
+ /* Botão */
+ .buton {
     background-color: #0000cc;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 9px;
     border: none;
-    border-radius: 4px;
-    font-size: 14px;
+    border-radius: 7px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center;
+    margin-bottom: 5%;
+    margin-left: 43%;
+    font-weight: 400;
+    font-family: 'Phudu', sans-serif;
+    font-size: 16px;
   }
   
-  .botao5:hover {
+  .buton:hover {
     background-color: #000099;
   }
-  .tc{
-    color: #0232B5;
-    text-align: center;
-    font-family: 'Phudu', sans-serif;
-    font-weight: 400;
-  }
+
+  
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+}
+
+.p1 {
+   
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p2 {
+    
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p2 li {
+    margin-bottom: 5px; 
+}
