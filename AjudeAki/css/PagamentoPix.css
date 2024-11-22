@@ -238,7 +238,8 @@ body {
 }
 
 .LE{
-margin-left: -60%;
+margin-left: -50%;
+
 }
 .LE img{
     width: 30%;
@@ -247,6 +248,7 @@ margin-left: -60%;
 .LD{
     margin-left: 60%;
     margin-top: -30%;
+    width: 90%;
 }
 .pixlogo{
     display: flex;
@@ -274,6 +276,10 @@ margin-left: -60%;
     color: rgb(0, 0, 0);
     word-wrap: break-word;
     margin: 10px 0;
+    text-align: left;
+    margin-left: -20%;
+    /* padding: 10px 20px; */
+    margin-right: 20%;
 }
 .b1{
     color: #A09797;
@@ -282,7 +288,7 @@ margin-left: -60%;
     font-style: normal;
 }
 .b{
-    color: #A09797;
+    color: #A09797;  
 }
 .button {
     display: inline-block;
@@ -299,4 +305,8 @@ margin-left: -60%;
 }
 .button:hover {
     background-color: #0232B5;
+}
+.B{ 
+text-align: center;
+margin-top: 20%;
 }
