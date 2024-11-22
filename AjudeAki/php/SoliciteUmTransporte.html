@@ -77,15 +77,16 @@
         <label for="numero">NÚMERO:</label>
         <input type="text" id="numero" name="numero" class="campo pequeno">
       </div>
-      <div class="d2">
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" class="campo">
-      </div>
+
       <div class="d3">
         <label for="cidade">CIDADE:</label>
         <input type="text" id="cidade" name="cidade" class="campo">
         <label for="bairro">BAIRRO:</label>
-        <input type="text" id="bairro" name="bairro" class="campo pequeno">
+        <input type="text" id="bairro" name="bairro" class="peque">
+      </div>
+      <div class="d2">
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" class="campo">
       </div>
       <p class="nota">
         *Confirmando hoje, nosso transporte irá buscar as doações no dia: <strong id="data"></strong></p>
@@ -106,10 +107,20 @@
             // Define o conteúdo da tag <strong> com a data formatada
             document.getElementById('data').textContent = dataFormatada;
         </script>
-      <button type="submit" class="botao5">CONFIRMAR DOAÇÃO</button>
+      <button type="submit" class="buton">CONFIRMAR DOAÇÃO</button>
     </form>
   </div>
 </div>
-
+<footer>
+    <div class="footer-cote"></div>
+    <div class="footer-content">
+        <p class="p1">©2024 AjudeAKI</p>
+        <ul class="p2">
+            <li>Tell: (11)999999999</li>
+            <li>Email: AjudeAKI@gmail.com</li>
+            <li>Instagram: @ajudeaki_</li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
