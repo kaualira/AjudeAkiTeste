@@ -180,3 +180,114 @@
 .botao a:hover {
     transform: scale(1.1);
 }
+/*  */
+
+body{
+    display: flex; /* Ativa o layout flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center
+}
+.CC{
+    /* justify-content: center; */
+}
+.T5{
+
+    font-size: 2.5rem; /* Aumentar o tamanho para destacar mais */
+    color: #0232B5;
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 35px;
+    font-size: 24px;
+
+}
+.bloco{
+    padding: 20px ; /* Espaçamento interno */
+    border: 5px solid transparent; /* Cria uma borda para a margem colorida */
+    box-shadow: 0 0 0 1px #0232B5; /* Margem colorida */
+    background-color: white; /* Cor de fundo da div */
+    text-align: center; /* Centraliza o texto */
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+
+}
+.tb{
+    color: #0232B5;
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
+    font-weight: 350;
+}
+
+.cb{
+    text-align: left;
+}
+/*  */
+.container {
+    /* text-align: center; */
+    margin-top: 10%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+
+  }
+  
+  .formulario .linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
+    font-weight: 300;
+    font-size: 90%;
+  }
+  
+  /* Campos */
+  .campo {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #0000cc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  /* Campo menor */
+  .pequeno {
+    max-width: 80px;
+  }
+  
+  /* Nota */
+  .nota {
+    font-size: 12px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Botão */
+  .botao5 {
+    background-color: #0000cc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .botao5:hover {
+    background-color: #000099;
+  }
+  .tc{
+    color: #0232B5;
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
+    font-weight: 400;
+  }
