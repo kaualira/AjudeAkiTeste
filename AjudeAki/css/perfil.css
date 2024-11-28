@@ -365,5 +365,28 @@ body, html {
     padding: 0;
 }
 
+.profile-content{
+   
+}
 
+
+.photo {
+    display: flex; 
+    
+    align-items: center; 
+    margin: 20px; 
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-left: 50%;
+}
+
+.profile-header{
+
+}
 

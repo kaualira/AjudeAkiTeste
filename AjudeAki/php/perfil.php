@@ -103,6 +103,8 @@ if ($result->num_rows === 1) {
         alt="Foto do usuário" 
         style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
 </div>
+</div>
+            </div>
 
                 <div class="info">
                     <h2><?= htmlspecialchars($usuario['nome']); ?></h2>
