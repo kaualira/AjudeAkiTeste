@@ -361,7 +361,61 @@ html, body {
     }
 }
 
+.botoes {
+    margin-left: 4em;
+    /* background-color: aqua; */
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+.botao1 {
+    width: 17%;
+    height: 40%;
+    background-color:#0232B5;
+    margin-right: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao1 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+}
+
+.botao2 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+}
+
+.botao1 a:hover {
+    transform: scale(1.1);
+}
+
+.botao2 a:hover {
+    transform: scale(1.1);
+}
+
+.botao2 {
+    width: 17%;
+    height: 40%;
+    background-color:#0232B5;
+    margin-left: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
 
 footer {
     background-color: #0232B5; 

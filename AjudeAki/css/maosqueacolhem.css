@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 4em;
+    background-color: #0232B5;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centraliza todo o conteúdo na barra estreita */
+    z-index: 11;
+}
+
+.navbar:hover {
+    width: 16em;
+    height: 100vh;
+}
+
+.blocologo {
+    width: 3em;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.navbar:hover .blocologo {
+    width: 15em;
+}
+
+.blocologo img {
+    width: 65%;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na barra estreita */
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: justify-content 0.2s ease; /* Transição suave ao mudar o alinhamento */
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start; /* Alinha à esquerda no hover */
+}
+
+.item-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover .item-text {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+}
+
+.home, .instituicoes, .dinheiro, .voluntario {
+    width: 25px; /* Tamanho padrão das imagens */
+    height: auto;
+    margin-left: 0;
+    transition: width 0.2s; /* Transição suave ao mudar o tamanho */
+    margin-top: 30px;
+}
+
+.navbar:hover .home,
+.navbar:hover .instituicoes,
+.navbar:hover .dinheiro,
+.navbar:hover .voluntario {
+    width: 20px; /* Tamanho menor ao passar o mouse sobre a navbar */
+    margin-left: 10px;
+    margin-top:0 ;
+}
+
+.seuperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-top: 10px;
+}
+
+.perfil {
+    width: 60%; /* Tamanho da imagem do SEU PERFIL */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px;
+}
+
+.navbar:hover .perfil {
+    width: 15%; /* Ajusta a largura ao passar o mouse */
+}
+
+.navbar:hover .seuperfil {
+    justify-content: center; /* Centraliza o conteúdo do seuperfil no hover */
+}
+
+/* Efeito hover restaurado */
+.nav-link::after {
+    content: ""; /* Cria um conteúdo vazio para o pseudoelemento */
+    position: absolute; /* Posiciona o pseudoelemento absolutamente em relação ao .nav-link */
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Inicia com largura 0 */
+    left: 50%; /* Posiciona no centro do link */
+    bottom: 0; /* Alinha a linha na parte inferior do link */
+    transition: width 0.4s ease, left 0.4s ease; /* Transições suaves */
+}
+
+.navbar:hover .nav-link:hover::after {
+    width: 100%; /* Expande a largura da linha quando o link é hover */
+    left: 0; /* Move a linha para a esquerda */
+}
+
+.caixapergunta {
+    display: none;
+
+}
+
+.navbar:hover .caixapergunta {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+    text-align: center;
+    p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+.botao {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.botao a:hover {
+    transform: scale(1.1);
+}
+
+/* fim navbar  */
+
+.nossas-acoes {
+    margin-left: 4em;
+    /* background-color: aqua; */
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Phudu", system-ui;
+    color: #0232B5;
+    font-weight: 900;
+    p {
+        font-size: 30px;
+    }
+}
+
+.areainst {
+    margin-left: 4em;
+    height: 12em;
+    /* background-color: aqua; */
+    display: flex;
+}
+
+.blocosinst {
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+}
+
+.blocosinst img {
+    width: 35%;
+}
+
+.blocoinfoinst {
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: start;
+}
+
+.blocoinfos {
+    width: 75%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.endereco {
+    width: 25%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 1.5px solid #0232B5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    p {
+        font-family: "Phudu", system-ui;
+        color: #0232B5;
+    }
+}
+
+.infoendereco {
+    width: 100%;
+    height: 15%;
+    /* background-color: antiquewhite; */
+    font-family: "Phudu", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+.blocoquemsomos {
+    margin-left: 4em;
+    /* background-color: aqua; */
+    height: 14em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Phudu", system-ui;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.blocoquem {
+    width: 70%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+
+.quemsomos {
+    width: 30%;
+    height: 15%;
+    /* background-color: chocolate; */
+    border-bottom: 2px solid #0232B5;
+    font-family: "Phudu", system-ui;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    p {
+        margin-left: 10px;
+        font-family: "Phudu", system-ui;
+        font-weight: 700;
+        color: #0232B5;
+    }
+}
+
+.quemsomostexto {
+    width: 100%;
+    height: 30%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.necessidadestitulo {
+    margin-left: 4em;
+    /* background-color: aqua; */
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Phudu", system-ui;
+    color: #0232B5;
+    font-weight: 900;
+    p {
+        font-size: 26px;
+    }
+}
+
+.necessidades {
+    margin-left: 4em;
+    /* background-color:coral; */
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.bloconecessidades {
+    width: 50%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blocos {
+    width: 20%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    font-family: "Phudu", system-ui;
+    img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+.botoes {
+    margin-left: 4em;
+    /* background-color: aqua; */
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao1 {
+    width: 17%;
+    height: 40%;
+    background-color:#0232B5;
+    margin-right: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao1 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+}
+
+.botao2 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+}
+
+.botao1 a:hover {
+    transform: scale(1.1);
+}
+
+.botao2 a:hover {
+    transform: scale(1.1);
+}
+
+.botao2 {
+    width: 17%;
+    height: 40%;
+    background-color:#0232B5;
+    margin-left: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 10px 0; 
+    width: 100%; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 70px;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
+}
