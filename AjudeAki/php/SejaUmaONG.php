@@ -18,7 +18,7 @@
         </div>
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="../php/perfil.php" class="nav-link">
                     <div class="seuperfil">
                         <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
                         <span class="item-text">SEU PERFIL</span>

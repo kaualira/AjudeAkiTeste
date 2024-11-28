@@ -31,7 +31,7 @@ if ($result->num_rows === 1) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seja uma ONG parceira </title>
+    <title>Perfil </title>
     <link rel="stylesheet" href="../css/perfil.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -115,7 +115,7 @@ if ($result->num_rows === 1) {
                 </div>
             </div>
 
-            <form method="POST" action="atualizar_perfil.php">
+            <form method="POST" action="atualizarperfil.php">
                 <p class="Titulo2"> Dados Pessoais</p>
                 <div class="d1">
                     <label>Nome Completo:</label>
