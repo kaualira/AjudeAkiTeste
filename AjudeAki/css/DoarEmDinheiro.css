@@ -214,7 +214,7 @@
     max-width: 75%; /* Limita a largura do texto */
     margin: 10px auto; /* Centraliza o texto */
     word-wrap: break-word; /* Garante que palavras longas sejam quebradas */
-    margin-bottom: 100px;
+    margin-bottom: 70px;
     word-spacing: 2px; /* Reduz o espaçamento entre palavras */
 }
 
@@ -239,9 +239,9 @@
 
 
 .etapa1 img {
-    margin-top: 60px;
+    margin-top: 70px;
     width: 90px;
-    margin-left: 15vw;
+    margin-left: 11vw;
 }
 
 .etapa1 p{
@@ -250,15 +250,15 @@
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 23vw;
+    margin-left: 20vw;
     margin-top: -6%;
     display: flex;
 }
 
 .etapa2 img {
-    margin-top: 70px;
+    margin-top: 50px;
     width: 90px;
-    margin-left: 15vw;
+    margin-left: 11vw;
 }
 
 .etapa2 p{
@@ -267,14 +267,14 @@
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 23vw;
+    margin-left: 20vw;
     margin-top: -6%;
 }
 
 .etapa3 img {
     margin-top: 70px;
     width: 90px;
-    margin-left: 15vw;
+    margin-left: 11vw;
 }
 
 .etapa3 p{
@@ -283,9 +283,9 @@
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 23vw;
+    margin-left: 20vw;
     margin-top: -6%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
 }
 
 
