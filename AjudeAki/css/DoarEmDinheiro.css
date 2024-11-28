@@ -241,7 +241,7 @@
 .etapa1 img {
     margin-top: 60px;
     width: 90px;
-    margin-left: 20vw;
+    margin-left: 15vw;
 }
 
 .etapa1 p{
@@ -250,7 +250,7 @@
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 28vw;
+    margin-left: 23vw;
     margin-top: -6%;
     display: flex;
 }
@@ -258,7 +258,7 @@
 .etapa2 img {
     margin-top: 70px;
     width: 90px;
-    margin-left: 20vw;
+    margin-left: 15vw;
 }
 
 .etapa2 p{
@@ -267,14 +267,14 @@
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 28vw;
+    margin-left: 23vw;
     margin-top: -6%;
 }
 
 .etapa3 img {
     margin-top: 70px;
     width: 90px;
-    margin-left: 20vw;
+    margin-left: 15vw;
 }
 
 .etapa3 p{
@@ -283,7 +283,7 @@
     text-align: left;
     font-weight: 400;
     color: #000000;
-    margin-left: 28vw;
+    margin-left: 23vw;
     margin-top: -6%;
     margin-bottom: 5%;
 }
