@@ -1,195 +1,176 @@
 * {
     margin: 0;
-    border: 0;
     padding: 0;
-    box-sizing: border-box; /* Para garantir que padding e bordas sejam inclusos no tamanho total dos elementos */
 }
 
-body {
-    font-family: "Phudu", system-ui;
+body{
+    color: #0232B5;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Phudu', sans-serif;
+    font-size: 24px;
 }
 
-/* navbar */
-
-nav {
-    height: 100vh;
-    width: 20vw;
+.navbar {
     position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 4em;
+    background-color: #0232B5;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    transform-origin: bottom;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
-    
+    justify-content: flex-start;
+    align-items: center; /* Centraliza todo o conteúdo na barra estreita */
+    z-index: 11;
 }
 
-#logo {
-    width: 100%;
-    height: 25%;
+.navbar:hover {
+    width: 16em;
+    height: 100vh;
+}
+
+.blocologo {
+    width: 3em;
+    height: auto;
+    padding: 10px;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.2s;
 }
 
-#logo img {
-    width: 70%; /* Ajuste do tamanho da logo */
+.navbar:hover .blocologo {
+    width: 15em;
 }
 
-#lista {
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    background-color: #0232B5;
-    border-radius: 0 20px 0 0;
-}
-
-#perfil {
-    width: 100%;
-    height: 18%;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    /* background-color:darkslategrey; */
-    border-radius: 0 20px 0 0;
-    margin-bottom: 38px;
+.blocologo img {
+    width: 65%;
     margin-top: 10px;
 }
 
-#perfil a {
+.navbar-nav {
+    list-style: none;
+    padding: 0;
     width: 100%;
-    height: 100%;
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na barra estreita */
     align-items: center;
-    align-content: center;
-    justify-items: center;
+    flex-direction: row;
+    padding: 10px 0;
     text-decoration: none;
+    position: relative;
+    color: white;
+    transition: justify-content 0.2s ease; /* Transição suave ao mudar o alinhamento */
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start; /* Alinha à esquerda no hover */
+}
+
+.item-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover .item-text {
+    display: block;
     color: white;
     font-family: "Phudu", system-ui;
-    position: relative;
 }
 
-#perfil a::after {
-    content: "";
-    position: absolute;
-    height: 1px; /* Altura da linha */
+.home, .instituicoes, .dinheiro, .voluntario {
+    width: 25px; /* Tamanho padrão das imagens */
+    height: auto;
+    margin-left: 0;
+    transition: width 0.2s; /* Transição suave ao mudar o tamanho */
+    margin-top: 30px;
+}
+
+.navbar:hover .home,
+.navbar:hover .instituicoes,
+.navbar:hover .dinheiro,
+.navbar:hover .voluntario {
+    width: 20px; /* Tamanho menor ao passar o mouse sobre a navbar */
+    margin-left: 10px;
+    margin-top:0 ;
+}
+
+.seuperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-top: 10px;
+}
+
+.perfil {
+    width: 60%; /* Tamanho da imagem do SEU PERFIL */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px;
+}
+
+.navbar:hover .perfil {
+    width: 15%; /* Ajusta a largura ao passar o mouse */
+}
+
+.navbar:hover .seuperfil {
+    justify-content: center; /* Centraliza o conteúdo do seuperfil no hover */
+}
+
+/* Efeito hover restaurado */
+.nav-link::after {
+    content: ""; /* Cria um conteúdo vazio para o pseudoelemento */
+    position: absolute; /* Posiciona o pseudoelemento absolutamente em relação ao .nav-link */
+    height: 2px; /* Altura da linha */
     background-color: white; /* Cor da linha */
-    width: 0; /* Largura inicial da linha */
-    left: 50%; /* Começa no centro */
-    bottom: 0; /* Posiciona no fundo do elemento */
-    transition: width 0.4s ease, left 0.4s ease; /* Animação suave */
+    width: 0; /* Inicia com largura 0 */
+    left: 50%; /* Posiciona no centro do link */
+    bottom: 0; /* Alinha a linha na parte inferior do link */
+    transition: width 0.4s ease, left 0.4s ease; /* Transições suaves */
 }
 
-#perfil a:hover::after {
-    width: 100%; /* Expande a linha para cobrir toda a largura */
-    left: 0; /* Faz com que a linha se estenda para os lados */
-    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
+.navbar:hover .nav-link:hover::after {
+    width: 100%; /* Expande a largura da linha quando o link é hover */
+    left: 0; /* Move a linha para a esquerda */
 }
 
-#perfil img {
-    width: 60%; /* Tamanho ajustado para o ícone de perfil */
+.caixapergunta {
+    display: none;
 
 }
 
-#itens {
-    width: 100%;
-    height: 80%;
-    /* background-color: darkcyan; */
+.navbar:hover .caixapergunta {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+    text-align: center;
+    p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
 }
 
-#itens ul {
+.botao {
     width: 100%;
     height: 50%;
-    /* background-color: dodgerblue; */
-}
-
-#itens li {
-    width: 100%;
-    height: 20%;
-    /* background-color: rgb(124, 58, 172); */
-    display: flex;
-    align-items: center; /* Isso alinha o conteúdo (imagem e texto) no centro vertical */
-    margin-bottom: 12px;
-}
-
-#itembotao {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    transition: color 0.3s, box-shadow 0.3s; /* Transição suave para cor e sombra */
-
-}
-
-#itembotao:after {
-    content: "";
-    position: absolute;
-    height: 1px; /* Espessura da linha */
-    width: 0;
-    left: 50%; /* Inicialmente no centro */
-    bottom: -2px; /* Posição abaixo do texto */
-    background-color: #FFFFFF; /* Cor neon branca */
-    transition: width 0.5s, left 0.5s; /* Transição suave para expandir */
-}
-
-#itembotao:hover {
-    color: #FFFFFF; /* Cor neon branca no texto */
-}
-
-#itembotao:hover:after {
-    width: 100%; /* Expande a linha completamente */
-    left: 0; /* Alinha à esquerda quando expandida */
-    box-shadow: 0 2px 30px #FFFFFF; /* Efeito de brilho neon branco na linha inferior */
-}
-
-#itens img {
-    width: 10%; /* Ajuste o tamanho da imagem para evitar que ela aumente */
-    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
-    margin-left: 10%;
-}
-
-#itens p {
-    margin: 0; /* Remova o espaçamento extra do parágrafo */
-    font-size: 0.9rem; /* Ajuste o tamanho da fonte */
-}
-
-#voluntario {
-    height: 45%;
-    width: 100%;
-    /* background-color: mediumorchid; */
-    margin-top: 36px;
-}
-
-#texto {
-    height: 40%;
-    width: 100%;
-    /* background-color: red;  */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#texto p {
-    font-size: 20px;
-    text-align: center; /* Centraliza o texto dentro do parágrafo */
-    
-}
-
-#botao {
-    width: 100%;
-    height: 40%;
-    /* background-color: orange; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-#botao a {
+.botao a {
     width: 50%;
     height: 65%;
     background-color: white;
@@ -204,15 +185,15 @@ nav {
     transition: 0.3s;
 }
 
-#botao a:hover {
+.botao a:hover {
     transform: scale(1.1);
-  }
+}
 
 .a {
     display: flex;
     width: 162vh;
     height: 7vw;
-    margin-left: 20vw;
+    margin-left: 20%;
     justify-content: center;
     align-items: center;
 }

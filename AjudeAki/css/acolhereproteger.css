@@ -316,7 +316,7 @@ html, body {
 
 .necessidadestitulo {
     margin-left: 4em;
-    background-color: aqua;
+    /* background-color: aqua; */
     height: 8em;
     display: flex;
     align-items: center;
@@ -331,9 +331,142 @@ html, body {
 
 .necessidades {
     margin-left: 4em;
-    background-color:coral;
+    /* background-color:coral; */
     height: 6em;
     display: flex;
     align-items: center;
+    justify-content:space-evenly;
+}
+
+.bloconecessidades {
+    width: 50%;
+    height: 90%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blocos {
+    width: 20%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;    
+    font-family: "Phudu", system-ui;
+    img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+.botoes {
+    margin-left: 4em;
+    /* background-color: aqua; */
+    height: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.botao1 {
+    width: 17%;
+    height: 40%;
+    background-color:#0232B5;
+    margin-right: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao1 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+}
+
+.botao2 a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", system-ui;
+    transition: 0.3s;
+}
+
+.botao1 a:hover {
+    transform: scale(1.1);
+}
+
+.botao2 a:hover {
+    transform: scale(1.1);
+}
+
+.botao2 {
+    width: 17%;
+    height: 40%;
+    background-color:#0232B5;
+    margin-left: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 10px 0; 
+    width: 100%; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 70px;
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
 }
