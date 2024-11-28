@@ -13,8 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Verifica se as senhas são iguais
     if ($senha === $confirmar_senha) {
-    // Criptografa a senha
-    $senha_criptografada = md5($senha);
+        // Criptografa a senha
+        $senha_criptografada = md5($senha);
 
         // Verifica se o e-mail já existe no banco de dados
         $sql_check_user = "SELECT COUNT(*) AS total FROM usuarios WHERE email = ?";
@@ -25,9 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $row_check_user = $result_check_user->fetch_assoc();
 
         if ($row_check_user['total'] == 1) {
+            // E-mail já cadastrado
             $_SESSION['usuario_existe'] = true;
             header('Location: cadastro.php');
-            exit;
+            exit; // Evita que o código continue após o redirecionamento
         }
 
         // Insere o novo usuário no banco de dados
@@ -35,20 +36,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt_insert_user = $conn->prepare($sql_insert_user);
         $stmt_insert_user->bind_param("sssss", $nome, $cpf, $rg, $email, $senha_criptografada);
         
-
-                    // Redireciona para a página de login após o cadastro
-                    header('Location: ../html/index.html');
-                    exit;
-                } else {
-                    echo "Erro ao realizar o cadastro: " . $conn->error;
-                }
-            } else {
-                // As senhas não coincidem
-                echo "As senhas não coincidem. Por favor, tente novamente.";
-            }
-        
-        
+        // Verifica se a inserção foi bem-sucedida
+        if ($stmt_insert_user->execute()) {
+            // Cadastro realizado com sucesso
+            header('Location: login.php');
+            exit; // Evita que o código continue após o redirecionamento
+        } else {
+            // Erro ao realizar o cadastro
+            echo "Erro ao realizar o cadastro: " . $conn->error;
+        }
+    } else {
+        // As senhas não coincidem
+        echo "As senhas não coincidem. Por favor, tente novamente.";
+    }
+}
 
 $conn->close();  // Fechando a conexão
-header('Location: cadastro.php');
-exit;
