@@ -3,13 +3,7 @@
     padding: 0;
 }
 
-body{
-    color: #0232B5;
-    margin-bottom: 20px;
-    font-weight: 600;
-    font-family: 'Phudu', sans-serif;
-    font-size: 24px;
-}
+
 
 .navbar {
     position: fixed;
@@ -200,14 +194,14 @@ body{
 
 .a2 {
     position: absolute;
-    left: 685px;
+    left: 37%;
     top: 125px;
     color: #0232B5;
 }
 
 .a3 {
     position: absolute;
-    left: 1025px;
+    left: 70%;
     top: 125px;
     color: #0232B5;
 }
@@ -241,6 +235,17 @@ body{
     top: 150px;
     color: #0232B5;
 } */
+
+
+p{
+
+    font-family: 'Phudu', sans-serif;
+    /* font-size: 24px; */
+}
+body{
+    /* align-content: center; */
+    
+}
 
 .dropdown {
     position: relative;
@@ -308,7 +313,7 @@ body{
 .container-alinhado {
     display: flex;
     align-items: center;
-    margin-left: 300px; /* Alinhando container para a esquerda */
+    margin-left: 10%;
     gap: 101px;
 }
 
@@ -362,7 +367,7 @@ body{
     display: flex;
     width: 152vh;
     height: 35px;
-    margin-left: 45px; /* Ajustando a margem para a esquerda */
+    margin-left: -10%; /* Ajustando a margem para a esquerda */
     margin-top: 10px;
     margin-bottom: 40px;
     justify-content: start;
@@ -382,7 +387,7 @@ body{
     width: 64vh;
     height: 50px;
     margin-top: 14px;
-    margin-left: 30vw;
+    margin-left: 20%;
     justify-content: start;
     align-items: flex-start;
     border-radius: 21px;
@@ -408,7 +413,7 @@ body{
     width: 64vh;
     height: 50px;
     margin-top: 22px;
-    margin-left: 30vw;
+    margin-left: 20%;
     justify-content: start;
     align-items: flex-start;
     border-radius: 21px;
@@ -429,6 +434,12 @@ body{
     border-radius: 15px;
 }
 
+.g{
+    margin-left: -10%;
+    justify-content: start;
+    font-family: "Phudu", system-ui;
+
+}
 #itembotaoD {
     width: 100%;
     display: flex;
