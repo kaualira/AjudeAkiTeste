@@ -396,12 +396,17 @@
 
 .checkbox-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: 370px;
-    margin-right: auto;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza as caixas de seleção horizontalmente */
+    align-items: center; /* Centraliza as caixas de seleção verticalmente */
+    padding: 20px;
+    background-color: white; /* Cor de fundo opcional */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    max-width: 800px; /* Largura máxima do contêiner */
+    width: 100%; /* Largura responsiva */
+    margin-left: 20%;
 }
 
 .checkbox-item {
