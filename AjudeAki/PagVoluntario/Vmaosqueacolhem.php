@@ -60,10 +60,10 @@
  <p class="Titulo">Página de Voluntariado</p>
 
 
- <img src="../imgs/InstituiçõesParceiras/AcolherEProteger.jpeg" class="imagem">
+ <img src="../imgs/InstituiçõesParceiras/MaosQueAcolhem.jpg" class="imagem">
  <div class="form">
     <p class="titulo2">DIAS DISPONIVEIS</p>
-    <form action="ProcessaAgendamento.php" method="POST">
+    <form action="../php/ProcessaAgendamento.php" method="POST">
  <input type="date" id="data" name="data" min="2024-10-01" max="2024-12-31"> 
  <select id="horario" name="horario">
         <option value="07:00">07:00</option>
