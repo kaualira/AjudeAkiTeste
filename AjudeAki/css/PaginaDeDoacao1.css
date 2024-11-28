@@ -189,6 +189,7 @@
     margin-left: 20vw; */
     justify-content: center;
     align-items: center;
+    margin-top: 90px;
 }
 
 .a2 {
@@ -449,56 +450,6 @@
     
 }
 
-.checkbox-grid1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: 370px;
-    margin-right: auto;
-}
-
-.checkbox-grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: 370px;
-    margin-right: auto;
-}
-
-.checkbox-grid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: 370px;
-    margin-right: auto;
-}
-
-.checkbox-grid4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: 370px;
-    margin-right: auto;
-}
-
-.checkbox-grid5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-top: 20px;
-    max-width: 300px;
-    margin-left: 370px;
-    margin-right: auto;
-}
-
 /* Quando o checkbox estiver marcado, a div inteira muda a borda */
 .checkbox-item input[type="checkbox"]:checked + label {
     border-color: #a2a2a2; /* Borda laranja */
@@ -526,6 +477,15 @@
 }
 
 .roupa1 {
-    width: 50px;
-    margin-left: 20px;
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+    border: 2px solid transparent; /* Sem borda no estado inicial */
+    border-radius: 8px;
+    transition: border-color 0.3s, transform 0.3s; /* Efeito de transição */
+}
+
+/* Quando o checkbox está marcado, estiliza a imagem associada */
+input[type="checkbox"]:checked + label img {
+    border-color: #28a745; /* Cor verde de seleção */
+    transform: scale(1.05); /* Leve aumento no tamanho */
 }
