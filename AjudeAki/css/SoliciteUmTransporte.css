@@ -181,6 +181,20 @@
     transform: scale(1.1);
 }
 /* BODY */
+.tb{
+    color: #0232B5;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Phudu', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+   text-align: center;
+}
+.cb{
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-size: 15px;
+}
 
 .Titulo{
     font-size: 3rem; 
@@ -210,9 +224,10 @@
     box-shadow: 0 0 0 1px #0232B5; /* Margem colorida */
     background-color: white; /* Cor de fundo da div */
     text-align: center; /* Centraliza o texto */
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 28%;
+    margin-right: 28%;
     border-radius: 5px;
+    width: 40%;
 
 }
 .d1{

@@ -70,7 +70,7 @@
 
 <div class="container">
     <p class="titulo2">ENDEREÇO</p>
-    <form class="formulario">
+    <form class="formulario" method="POST" action="processarendereco.php">
       <div class="d1">
         <label for="rua">RUA:</label>
         <input type="text" id="rua" name="rua" class="campo">
