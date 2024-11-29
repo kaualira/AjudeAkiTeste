@@ -372,9 +372,9 @@ body, html {
 
 .photo {
     display: flex; 
-    
     align-items: center; 
     margin: 20px; 
+
 }
 
 .profile-photo {
@@ -389,4 +389,3 @@ body, html {
 .profile-header{
 
 }
-
