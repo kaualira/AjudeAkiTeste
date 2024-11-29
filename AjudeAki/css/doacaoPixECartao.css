@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -259,7 +260,16 @@ body{
     align-content: center;
     text-align: center;
     padding-right: 57px; /* Espaço para a setinha */
+    
 }
+
+.dropdown button {
+    /* color: #0232B5; */
+    background: none;
+    border:none ;
+}
+
+
 
 .dropdown::after {
     content: "▼"; /* Adiciona a setinha */
@@ -269,10 +279,11 @@ body{
     transform: translateY(-50%);
     font-size: 14px;
     color: #0232B5;
+    
 }
 
 .dropdown:hover::after {
-    color: #ddd; /* Cor ao passar o mouse */
+    color: #ddd; 
 }
 
 .dropdown-content {
