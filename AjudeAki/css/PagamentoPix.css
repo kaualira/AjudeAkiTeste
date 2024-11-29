@@ -210,20 +210,21 @@ body {
     margin-bottom: 20px;
     font-weight: 600;
     font-family: 'Phudu', sans-serif;
-    font-size: 24px;
+    font-size: 30px;
     
 
 }
 .tt2{
     color: #0232B5;
     margin-bottom: 20px;
-
-    font-weight: 200;
+    font-weight: 400;
     font-family: 'Phudu', sans-serif;
-
+    font-style: normal;
     font-size: 18px;
     display: flex;
     align-items: center;
+    
+    
 }
 .resumo-doacao {
     border: 1px solid #0232B5;
@@ -232,9 +233,13 @@ body {
     margin-bottom: 20px;
     color: #000000;
     text-align: left;
+
 }
 .resumo-doacao p {
     margin: 5px 0;
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-size: 15px;
 }
 
 .LE{
