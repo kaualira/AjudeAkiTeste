@@ -11,52 +11,52 @@
 </head>
 <body>
 <nav class="navbar">
-    <div class="blocologo">
-        <img src="../imgs/navbar/semfundo.png" alt="Logo">
-    </div>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <div class="seuperfil">
-                    <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
-                    <span class="item-text">SEU PERFIL</span>
-                </div>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <img src="../imgs/navbar/home.png" alt="home" class="home">
-                <span class="item-text">HOME</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
-                <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
-                <span class="item-text">DOAÇÕES EM DINHEIRO</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link">
-                <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
-                <span class="item-text">SEJA UM VOLUNTÁRIO</span>
-            </a>
-        </li>
-    </ul>
-    <div class="caixapergunta">
-        <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
-        <div class="botao">
-            <a href="#" id="botao">
-                CLIQUE AQUI
-            </a>
+        <div class="blocologo">
+            <img src="../imgs/navbar/semfundo.png" alt="Logo">
         </div>
-    </div>
-</nav>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../html/index.html" class="nav-link">
+                    <div class="seuperfil">
+                        <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                        <span class="item-text">SEU PERFIL</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/index.html" class="nav-link">
+                    <img src="../imgs/navbar/home.png" alt="home" class="home">
+                    <span class="item-text">HOME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/InstituiçõesParceiras.html" class="nav-link">
+                    <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                    <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/DoarEmDinheiro.html" class="nav-link">
+                    <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                    <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/SejaUmVoluntario.html" class="nav-link">
+                    <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                    <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+                </a>
+            </li>
+        </ul>
+        <div class="caixapergunta">
+            <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+            <div class="botao">
+                <a href="../php/SejaUmaONG.php" id="botao">
+                    CLIQUE AQUI
+                </a>
+            </div>
+        </div>
+    </nav>
  <p class="Titulo">Página de Voluntariado</p>
 
 
