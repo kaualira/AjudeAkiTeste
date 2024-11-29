@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AjudeAki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/doacaoPixECartao.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="blocologo">
+            <img src="../imgs/navbar/semfundo.png" alt="Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../php/perfil.php" class="nav-link">
+                    <div class="seuperfil">
+                        <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                        <span class="item-text">SEU PERFIL</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/index.html" class="nav-link">
+                    <img src="../imgs/navbar/home.png" alt="home" class="home">
+                    <span class="item-text">HOME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/InstituiçõesParceiras.html" class="nav-link">
+                    <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                    <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/DoarEmDinheiro.html" class="nav-link">
+                    <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                    <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="../html/SejaUmVoluntario.html" class="nav-link">
+                    <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                    <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+                </a>
+            </li>
+        </ul>
+        <div class="caixapergunta">
+            <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+            <div class="botao">
+                <a href="../php/SejaUmaONG.php" id="botao">
+                    CLIQUE AQUI
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Não preciso nem explicar né? O proprio nome ja diz o que é-->
+
+    <div class="a">
+        <p>PÁGINA DE DOAÇÃO</p>
+    </div>
+
+    <div class="a2">
+        <p>Selecione o seu tipo de doação</p>
+    </div>
+
+    <div class="a3">
+        <p>Informe o valor</p>
+    </div>
+
+    <div class="b">
+        
+        <div class="container-alinhado">
+            <img src="../imgs/InstituiçõesParceiras/CoraçaoAberto.jpg" alt="">
+
+                    
+            <!-- Dropdown principal, que infernal pra fazer, não me pergunta do porque tem um fundo cinza quase invisivel nele, se souber resolver, resolve, se não, não me enche >:( -->
+            <div class="dropdown">
+                
+                <button class="dropbtn">Doar em Dinheiro</button>
+                <div class="dropdown-content">
+                    <a href="#" onclick="goToPage('PaginaDeDoacao1 .html')">Doar em Material</a>
+                </div>
+            </div>
+            
+            <!-- Input Number, não faz sentido pra mim ter 3 zeros, mas ja que eu só sigo ordens, aqui estou eu, colocando 3 zeros -->
+            <div class="input-number">
+                <label for="idade"></label>
+                <div class="input-container">
+                    <input type="text" name="idade" id="idade" placeholder="R$ 000,00">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- A parte do pagamento, é so ler -->
+     
+    <div class="d">
+        <p>MODO DE PAGAMENTO</p>
+    </div>
+    <!-- Botão do pix, vou ter que arrumar depois que as paginas pra linkar estiverem prontas -->
+    <div class="e">
+        <a href="../php/PagamentoPix.php" id="itembotaoD">
+                <img src="../imgs/PagamentoPix/pixLogo1.png" alt="">
+                <p>PIX</p>
+        </a>
+    </div>
+    <!-- Botão do cartão, mesma coisa do de cima pra esse -->
+    <div class="f">
+        <a href="#" id="itembotaoD">
+            <img src="../imgs/PagamentoPix/cartao.jpg" alt="">
+            <p>CARTÃO DE DÉBITO</p>
+        </a>
+    </div>
+    <!-- Mesma coisa que os dois, um pouco mais complicado eu acho, mas eu consigo me virar... eu acho-->
+    <div class="g">
+        <a href="#" id="botaoDo">
+            Seguir para o Pagamento
+        </a>
+    </div>
+
+
+    <script>
+        // Função para armazenar o valor da doação no localStorage
+        const input = document.getElementById('idade');
+    
+        input.addEventListener('input', function() {
+            let value = input.value.replace(/\D/g, ''); // Remove tudo que não é número
+            value = (value / 100).toFixed(2) + '';      // Divide por 100 e bota dois zeros, sacou?
+            value = value.replace('.', ',');            // Troca o ponto por vírgula
+            input.value = 'R$ ' + value;                // Bota "R$", esse eu não sabia fazer, MUITO OBRIGADO JrDev <3
+    
+            // Armazena o valor no localStorage
+            localStorage.setItem('doacaoValor', value); 
+        });
+    </script>
+</body>
+</html>
