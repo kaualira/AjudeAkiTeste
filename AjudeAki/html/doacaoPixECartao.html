@@ -82,7 +82,7 @@
                 
                 <button class="dropbtn">Doar em Dinheiro</button>
                 <div class="dropdown-content">
-                    <a href="#" onclick="goToPage('doacaoMateriais.html')">Doar em Material</a>
+                    <a href="#" onclick="goToPage('PaginaDeDoacao1 .html')">Doar em Material</a>
                 </div>
             </div>
             
@@ -103,7 +103,7 @@
     </div>
     <!-- Botão do pix, vou ter que arrumar depois que as paginas pra linkar estiverem prontas -->
     <div class="e">
-        <a href="#" id="itembotaoD">
+        <a href="../php/PagamentoPix.php" id="itembotaoD">
                 <img src="../imgs/PagamentoPix/pixLogo1.png" alt="">
                 <p>PIX</p>
         </a>
@@ -124,19 +124,17 @@
 
 
     <script>
-        // Função pra ir pra outra página
-        function goToPage(page) {
-            window.location.href = page;
-        }
-
-        // Java, se quiser saber o que faz, APRENDE CARALHO!
+        // Função para armazenar o valor da doação no localStorage
         const input = document.getElementById('idade');
-
+    
         input.addEventListener('input', function() {
             let value = input.value.replace(/\D/g, ''); // Remove tudo que não é número
             value = (value / 100).toFixed(2) + '';      // Divide por 100 e bota dois zeros, sacou?
-            value = value.replace('.', ',');            // Troca o ponto por vírgula ô doente. Obs: esse doente é pro Kavs, não se sinta ofendido, ele é meio burro, mas ta se esforçando.
+            value = value.replace('.', ',');            // Troca o ponto por vírgula
             input.value = 'R$ ' + value;                // Bota "R$", esse eu não sabia fazer, MUITO OBRIGADO JrDev <3
+    
+            // Armazena o valor no localStorage
+            localStorage.setItem('doacaoValor', value); 
         });
     </script>
 </body>
