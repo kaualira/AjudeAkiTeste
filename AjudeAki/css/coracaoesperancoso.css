@@ -197,9 +197,9 @@ html, body {
     justify-content: center;
     font-family: "Phudu", system-ui;
     color: #0232B5;
-    font-weight: 900;
+    font-weight: 700;
     p {
-        font-size: 30px;
+        font-size: 35px;
     }
 }
 
@@ -266,6 +266,9 @@ html, body {
     justify-content: center;
     align-items: center;
     /* margin-bottom: 10px; */
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-size: 15px;
 }
 
 .blocoquemsomos {
@@ -300,8 +303,9 @@ html, body {
     p {
         margin-left: 10px;
         font-family: "Phudu", system-ui;
-        font-weight: 700;
+        font-weight: 500;
         color: #0232B5;
+        font-style: normal;
     }
 }
 
@@ -312,7 +316,17 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    font-size: 15px;
 }
+.quemsomostexto1 {
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
 
 .necessidadestitulo {
     margin-left: 4em;
@@ -323,7 +337,7 @@ html, body {
     justify-content: center;
     font-family: "Phudu", system-ui;
     color: #0232B5;
-    font-weight: 900;
+    font-weight: 550;
     p {
         font-size: 26px;
     }

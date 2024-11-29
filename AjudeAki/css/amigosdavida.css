@@ -198,7 +198,7 @@ html, body {
     font-family: "Phudu", system-ui;
     font-style: normal;
     color: #0232B5;
-    font-weight: 800;
+    font-weight: 700;
     p {
         font-size: 35px;
     }
@@ -319,10 +319,13 @@ html, body {
     align-items: center;
     font-family: "Poppins", system-ui;
     font-style: normal;
+    font-size: 15px;
 }
 .quemsomostexto1 {
     font-family: "Poppins", system-ui;
     font-style: normal;
+    font-size: 15px;
+    margin-top: 8px;
 }
 
 .necessidadestitulo {
@@ -334,7 +337,7 @@ html, body {
     justify-content: center;
     font-family: "Phudu", system-ui;
     color: #0232B5;
-    font-weight: 900;
+    font-weight: 550;
     p {
         font-size: 26px;
     }
@@ -355,6 +358,7 @@ html, body {
     /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .blocos {
