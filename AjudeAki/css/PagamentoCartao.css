@@ -1,10 +1,190 @@
 /* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
   
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 4em;
+    background-color: #0232B5;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centraliza todo o conteúdo na barra estreita */
+    z-index: 11;
+}
+
+.navbar:hover {
+    width: 16em;
+    height: 100vh;
+}
+
+.blocologo {
+    width: 3em;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.navbar:hover .blocologo {
+    width: 15em;
+}
+
+.blocologo img {
+    width: 65%;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na barra estreita */
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: justify-content 0.2s ease; /* Transição suave ao mudar o alinhamento */
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start; /* Alinha à esquerda no hover */
+}
+
+.item-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover .item-text {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+}
+
+.home, .instituicoes, .dinheiro, .voluntario {
+    width: 25px; /* Tamanho padrão das imagens */
+    height: auto;
+    margin-left: 0;
+    transition: width 0.2s; /* Transição suave ao mudar o tamanho */
+    margin-top: 30px;
+}
+
+.navbar:hover .home,
+.navbar:hover .instituicoes,
+.navbar:hover .dinheiro,
+.navbar:hover .voluntario {
+    width: 20px; /* Tamanho menor ao passar o mouse sobre a navbar */
+    margin-left: 10px;
+    margin-top:0 ;
+}
+
+.seuperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-top: 10px;
+}
+
+.perfil {
+    width: 60%; /* Tamanho da imagem do SEU PERFIL */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px;
+}
+
+.navbar:hover .perfil {
+    width: 15%; /* Ajusta a largura ao passar o mouse */
+}
+
+.navbar:hover .seuperfil {
+    justify-content: center; /* Centraliza o conteúdo do seuperfil no hover */
+}
+
+/* Efeito hover restaurado */
+.nav-link::after {
+    content: ""; /* Cria um conteúdo vazio para o pseudoelemento */
+    position: absolute; /* Posiciona o pseudoelemento absolutamente em relação ao .nav-link */
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Inicia com largura 0 */
+    left: 50%; /* Posiciona no centro do link */
+    bottom: 0; /* Alinha a linha na parte inferior do link */
+    transition: width 0.4s ease, left 0.4s ease; /* Transições suaves */
+}
+
+.navbar:hover .nav-link:hover::after {
+    width: 100%; /* Expande a largura da linha quando o link é hover */
+    left: 0; /* Move a linha para a esquerda */
+}
+
+.caixapergunta {
+    display: none;
+
+}
+
+.navbar:hover .caixapergunta {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+    text-align: center;
+    p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+.botao {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.botao a:hover {
+    transform: scale(1.1);
+}
+  /*  */
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
