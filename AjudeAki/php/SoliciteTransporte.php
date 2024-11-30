@@ -61,12 +61,11 @@
 <div class="CC">
   <div class="Titulo"> <p>Solicite um transporte</p> </div>
 
-<div class="bloco"> <!-- Bloco de cima com ligação a pagina de doação 2 -->
+  <div class="bloco"> <!-- Bloco de cima com ligação à página de doação -->
     <p class="tb">RESUMO DA DOAÇÃO</p>
-    <p class="cb">1</p> <!-- PHP / BD -->
-    <p class="cb">2</p> <!-- PHP / BD -->
-
+    <!-- Itens adicionados dinamicamente aqui -->
 </div>
+
 
 <div class="container">
     <p class="titulo2">ENDEREÇO</p>
@@ -107,6 +106,24 @@
             // Define o conteúdo da tag <strong> com a data formatada
             document.getElementById('data').textContent = dataFormatada;
         </script>
+        <script>
+    // Função para exibir os itens selecionados no resumo
+    function mostrarResumo() {
+        const itensSelecionados = JSON.parse(localStorage.getItem('itensSelecionados')) || [];
+        const resumoContainer = document.querySelector('.bloco');
+
+        itensSelecionados.forEach((item, index) => {
+            const itemElement = document.createElement('p');
+            itemElement.className = 'cb';
+            itemElement.textContent = `${index + 1}. ${item}`;
+            resumoContainer.appendChild(itemElement);
+        });
+    }
+
+    // Executa a função ao carregar a página
+    document.addEventListener('DOMContentLoaded', mostrarResumo);
+</script>
+
       <button type="submit" class="buton">CONFIRMAR DOAÇÃO</button>
     </form>
   </div>
