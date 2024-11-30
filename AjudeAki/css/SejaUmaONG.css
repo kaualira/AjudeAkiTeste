@@ -214,9 +214,17 @@
     margin-bottom: 2%;
 }
 
+.form{
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Phudu", system-ui;
+    font-size: 15px;
+}
+
 .d1{
     text-align: center;
     margin: 0 auto;
+    
 }
 .d2{
   margin-left: 5%;
