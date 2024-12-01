@@ -195,7 +195,7 @@
 
 .a2 {
     position: absolute;
-    left: 700px;
+    left: 600px;
     top: 165px;
     color: #0232B5;
     font-weight: 300;
@@ -232,7 +232,7 @@
 
 .b img {
     width: 190px;
-    margin-left: -186px;
+    margin-left: -300px;
 }
 
 /* .b p {
@@ -396,14 +396,14 @@
     height: 35px;
     margin-left: 45px; /* Ajustando a margem para a esquerda */
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     justify-content: start;
     align-items: flex-start;
 }
 
 .d p {
     margin-left: 629px;
-    font-size: 22px;
+    font-size: 25px;
     color: #0232B5;
     font-family: "Phudu", system-ui;
     font-weight: 700;
@@ -412,15 +412,16 @@
 .checkbox-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    gap: 1; /* Espaçamento entre os itens */
+    column-gap: 90px;
+    row-gap: 5px; 
     justify-items: center; /* Centraliza as caixas de seleção horizontalmente */
     align-items: center; /* Centraliza as caixas de seleção verticalmente */
     padding: 20px;
     background-color: white; /* Cor de fundo opcional */
     border-radius: 10px; /* Bordas arredondadas */
     max-width: 800px; /* Largura máxima do contêiner */
-    width: 150%; /* Largura responsiva */
-    margin-left: 18%;
+    width: 300%; /* Largura responsiva */
+    margin-left: 21%;
 }
 
 .checkbox-item {
@@ -432,7 +433,7 @@
     border: 2px solid #0232B5; /* Borda inicial azul */
    background-color: white;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave */
-    width: 90%;
+    width: 120%;
     height: 70%;
     margin-bottom: -10px;
     cursor: pointer; /* Indica que é clicável */
@@ -546,6 +547,7 @@ input[type="checkbox"]:checked + label img {
     font-size: 15px;
     margin-left: 14%;
     text-transform: none;
+    margin-top: 15px;
 }
 
 .confirmar{
@@ -555,18 +557,66 @@ input[type="checkbox"]:checked + label img {
     border: none;
     margin-left: 40%;
     width: 13%;
-    height: 20%;
+    height: 25%;
     border-radius: 5px;
     font-weight: 400;
     font-style: normal;
     font-family: "Poppins", system-ui;
-    font-size: 15px;
+    font-size: 17px;
     cursor: pointer; /* Cursor de mão ao passar o mouse */
     border-radius: 5px; /* Bordas arredondadas */
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
     transition: box-shadow 0.3s ease; /* Suavidade na transição */
+    margin-bottom: 20px;
 }
 
 .confirmar:hover {
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
+
+
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+font-weight: 300;
+font-style: normal;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+font-weight: 300;
+font-style: normal;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
 }
