@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AjudeAKI</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <!-- <link rel="stylesheet" href="slide.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet"> -->
+
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 4em;
+    background-color: #0232B5;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centraliza todo o conteúdo na barra estreita */
+    z-index: 11;
+}
+
+.navbar:hover {
+    width: 16em;
+    height: 100vh;
+}
+
+.blocologo {
+    width: 3em;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.navbar:hover .blocologo {
+    width: 15em;
+}
+
+.blocologo img {
+    width: 65%;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na barra estreita */
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: justify-content 0.2s ease; /* Transição suave ao mudar o alinhamento */
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start; /* Alinha à esquerda no hover */
+}
+
+.item-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover .item-text {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+}
+
+.home, .instituicoes, .dinheiro, .voluntario {
+    width: 25px; /* Tamanho padrão das imagens */
+    height: auto;
+    margin-left: 0;
+    transition: width 0.2s; /* Transição suave ao mudar o tamanho */
+    margin-top: 30px;
+}
+
+.navbar:hover .home,
+.navbar:hover .instituicoes,
+.navbar:hover .dinheiro,
+.navbar:hover .voluntario {
+    width: 20px; /* Tamanho menor ao passar o mouse sobre a navbar */
+    margin-left: 10px;
+    margin-top:0 ;
+}
+
+.seuperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-top: 10px;
+}
+
+.perfil {
+    width: 60%; /* Tamanho da imagem do SEU PERFIL */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px;
+}
+
+.navbar:hover .perfil {
+    width: 15%; /* Ajusta a largura ao passar o mouse */
+}
+
+.navbar:hover .seuperfil {
+    justify-content: center; /* Centraliza o conteúdo do seuperfil no hover */
+}
+
+/* Efeito hover restaurado */
+.nav-link::after {
+    content: ""; /* Cria um conteúdo vazio para o pseudoelemento */
+    position: absolute; /* Posiciona o pseudoelemento absolutamente em relação ao .nav-link */
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Inicia com largura 0 */
+    left: 50%; /* Posiciona no centro do link */
+    bottom: 0; /* Alinha a linha na parte inferior do link */
+    transition: width 0.4s ease, left 0.4s ease; /* Transições suaves */
+}
+
+.navbar:hover .nav-link:hover::after {
+    width: 100%; /* Expande a largura da linha quando o link é hover */
+    left: 0; /* Move a linha para a esquerda */
+}
+
+.caixapergunta {
+    display: none;
+
+}
+
+.navbar:hover .caixapergunta {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+    text-align: center;
+    p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+.botao {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.botao a:hover {
+    transform: scale(1.1);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    align-items: center;   /* Centraliza o conteúdo horizontalmente */
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #0232B5;
+    font-size: 2.5em;
+    font-family: 'Phudu', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.relatorio {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center;   /* Centraliza o conteúdo horizontalmente */
+    width: 100%;
+    max-width: 1200px;
+    padding: 2em;
+    gap: 2em; /* Espaço entre o título e o container */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    width: 100%;
+}
+
+.ong-card {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.ong-card:hover {
+    transform: scale(1.05);
+}
+
+.ong-card h2 {
+    color: #0232B5;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    font-family: 'Poppins' , 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.ong-card p {
+    font-size: 1em;
+    margin: 0.5em 0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.btn-detalhes {
+    display: inline-block;
+    background-color: #0232B5;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 1em;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.btn-detalhes:hover {
+    background-color: #021d7a;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="blocologo">
+            <img src="../imgs/navbar/semfundo.png" alt="Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../php/perfil.php" class="nav-link">
+                    <div class="seuperfil">
+                        <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                        <span class="item-text">SEU PERFIL</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <img src="../imgs/navbar/home.png" alt="home" class="home">
+                    <span class="item-text">HOME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="InstituiçõesParceiras.html" class="nav-link">
+                    <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                    <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="DoarEmDinheiro.html" class="nav-link">
+                    <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                    <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="SejaUmVoluntario.html" class="nav-link">
+                    <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                    <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+                </a>
+            </li>
+            
+        </ul>
+        <div class="caixapergunta">
+            <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+            <div class="botao">
+                <a href="../php/SejaUmaONG.php" id="botao">
+                    CLIQUE AQUI
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="relatorio">
+        <h1>Relatório Mensal de Doações</h1>
+        <div class="container">
+            <!-- Cartões das ONGs -->
+            <div class="ong-card">
+                <h2>ONG ABC</h2>
+                <p>Recebido: R$ 10.000</p>
+                <p>Aplicação: Distribuição de cestas básicas</p>
+                <a href="detalhesABC.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG XYZ</h2>
+                <p>Recebido: R$ 8.500</p>
+                <p>Aplicação: Campanhas de conscientização</p>
+                <a href="detalhesXYZ.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG DEF</h2>
+                <p>Recebido: R$ 7.200</p>
+                <p>Aplicação: Construção de abrigos</p>
+                <a href="detalhesDEF.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG GHI</h2>
+                <p>Recebido: R$ 6.300</p>
+                <p>Aplicação: Atendimento médico</p>
+                <a href="detalhesGHI.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG JKL</h2>
+                <p>Recebido: R$ 5.800</p>
+                <p>Aplicação: Educação infantil</p>
+                <a href="detalhesJKL.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG MNO</h2>
+                <p>Recebido: R$ 12.000</p>
+                <p>Aplicação: Reflorestamento</p>
+                <a href="detalhesMNO.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG PQR</h2>
+                <p>Recebido: R$ 9.500</p>
+                <p>Aplicação: Programas esportivos</p>
+                <a href="detalhesPQR.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG STU</h2>
+                <p>Recebido: R$ 11.700</p>
+                <p>Aplicação: Auxílio a moradores de rua</p>
+                <a href="detalhesSTU.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG VWX</h2>
+                <p>Recebido: R$ 4.800</p>
+                <p>Aplicação: Adoção de animais</p>
+                <a href="detalhesVWX.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG YZA</h2>
+                <p>Recebido: R$ 6.400</p>
+                <p>Aplicação: Construção de escolas</p>
+                <a href="detalhesYZA.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG BCD</h2>
+                <p>Recebido: R$ 5.000</p>
+                <p>Aplicação: Apoio psicológico</p>
+                <a href="detalhesBCD.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+            <div class="ong-card">
+                <h2>ONG EFG</h2>
+                <p>Recebido: R$ 8.000</p>
+                <p>Aplicação: Cursos técnicos</p>
+                <a href="detalhesEFG.html" class="btn-detalhes">Ver Mais</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - ONG ABC</title>
+    <link rel="stylesheet" href="detalhesABC.css">
+</head>
+<style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 4em;
+    background-color: #0232B5;
+    transition: height 0.2s ease-in-out, width 0.2s ease-in-out;
+    transform-origin: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Centraliza todo o conteúdo na barra estreita */
+    z-index: 11;
+}
+
+.navbar:hover {
+    width: 16em;
+    height: 100vh;
+}
+
+.blocologo {
+    width: 3em;
+    height: auto;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.navbar:hover .blocologo {
+    width: 15em;
+}
+
+.blocologo img {
+    width: 65%;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem na barra estreita */
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    transition: justify-content 0.2s ease; /* Transição suave ao mudar o alinhamento */
+}
+
+.navbar:hover .nav-link {
+    justify-content: flex-start; /* Alinha à esquerda no hover */
+}
+
+.item-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.navbar:hover .item-text {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+}
+
+.home, .instituicoes, .dinheiro, .voluntario {
+    width: 25px; /* Tamanho padrão das imagens */
+    height: auto;
+    margin-left: 0;
+    transition: width 0.2s; /* Transição suave ao mudar o tamanho */
+    margin-top: 30px;
+}
+
+.navbar:hover .home,
+.navbar:hover .instituicoes,
+.navbar:hover .dinheiro,
+.navbar:hover .voluntario {
+    width: 20px; /* Tamanho menor ao passar o mouse sobre a navbar */
+    margin-left: 10px;
+    margin-top:0 ;
+}
+
+.seuperfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e o texto */
+    width: 100%; /* Garante que ocupe toda a largura disponível */
+    margin-top: 10px;
+}
+
+.perfil {
+    width: 60%; /* Tamanho da imagem do SEU PERFIL */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 5px;
+}
+
+.navbar:hover .perfil {
+    width: 15%; /* Ajusta a largura ao passar o mouse */
+}
+
+.navbar:hover .seuperfil {
+    justify-content: center; /* Centraliza o conteúdo do seuperfil no hover */
+}
+
+/* Efeito hover restaurado */
+.nav-link::after {
+    content: ""; /* Cria um conteúdo vazio para o pseudoelemento */
+    position: absolute; /* Posiciona o pseudoelemento absolutamente em relação ao .nav-link */
+    height: 2px; /* Altura da linha */
+    background-color: white; /* Cor da linha */
+    width: 0; /* Inicia com largura 0 */
+    left: 50%; /* Posiciona no centro do link */
+    bottom: 0; /* Alinha a linha na parte inferior do link */
+    transition: width 0.4s ease, left 0.4s ease; /* Transições suaves */
+}
+
+.navbar:hover .nav-link:hover::after {
+    width: 100%; /* Expande a largura da linha quando o link é hover */
+    left: 0; /* Move a linha para a esquerda */
+}
+
+.caixapergunta {
+    display: none;
+
+}
+
+.navbar:hover .caixapergunta {
+    display: block;
+    color: white;
+    font-family: "Phudu", system-ui;
+    text-align: center;
+    p {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+}
+
+.botao {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.botao a {
+    width: 50%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: black;  
+    text-decoration: none; 
+    transition: 0.3s;
+}
+
+.botao a:hover {
+    transform: scale(1.1);
+}
+    /* Estilo Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header.hero {
+    color: #0232B5;
+    text-align: center;
+    padding: 2em 1em;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+header.hero p {
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+main.detalhes {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+section.informacoes {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+section.informacoes .card {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1.5em;
+    text-align: center;
+    flex: 1 1 45%;
+    max-width: 300px;
+    border-color: #0232B5;
+}
+
+section.informacoes .card h2 {
+    color: #0232B5;
+    margin-bottom: 0.5em;
+}
+
+section.galeria {
+    text-align: center;
+}
+
+section.galeria h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #0232B5;
+}
+
+section.galeria .fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+section.galeria .fotos img {
+    width: calc(33.33% - 1em);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section.galeria .fotos img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    section.galeria .fotos img {
+        width: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 480px) {
+    section.galeria .fotos img {
+        width: 100%;
+    }
+}
+
+section.impacto {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5em;
+}
+
+section.impacto h2 {
+    color: #0232B5;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+section.impacto ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0 1.5em;
+}
+
+section.impacto ul li {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    text-align: center;
+    background: #0232B5;
+    color: white;
+    padding: 1em;
+}
+
+</style>
+<body>
+    <nav class="navbar">
+        <div class="blocologo">
+            <img src="../imgs/navbar/semfundo.png" alt="Logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="../php/perfil.php" class="nav-link">
+                    <div class="seuperfil">
+                        <img src="../imgs/navbar/PerfilBranco.png" alt="perfil" class="perfil">
+                        <span class="item-text">SEU PERFIL</span>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <img src="../imgs/navbar/home.png" alt="home" class="home">
+                    <span class="item-text">HOME</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="InstituiçõesParceiras.html" class="nav-link">
+                    <img src="../imgs/navbar/instituições.png" alt="instituicoes" class="instituicoes">
+                    <span class="item-text">INSTITUIÇÕES PARCEIRAS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="DoarEmDinheiro.html" class="nav-link">
+                    <img src="../imgs/navbar/dinheiro.png" alt="dinheiro" class="dinheiro">
+                    <span class="item-text">DOAÇÕES EM DINHEIRO</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="SejaUmVoluntario.html" class="nav-link">
+                    <img src="../imgs/navbar/voluntário.png" alt="voluntário" class="voluntario">
+                    <span class="item-text">SEJA UM VOLUNTÁRIO</span>
+                </a>
+            </li>
+            
+        </ul>
+        <div class="caixapergunta">
+            <p>AINDA NÃO É UMA ONG PARCEIRA?</p>
+            <div class="botao">
+                <a href="../php/SejaUmaONG.php" id="botao">
+                    CLIQUE AQUI
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Detalhes da ONG ABC</h1>
+    </header>
+
+    <main class="detalhes">
+        <section class="informacoes">
+            <div class="card">
+                <h2>Quantia Recebida</h2>
+                <p>R$ 10.000</p>
+            </div>
+            <div class="card">
+                <h2>Onde Foi Usado</h2>
+                <p>Distribuição de cestas básicas para famílias carentes na comunidade XYZ.</p>
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="fotos">
+                <img src="../imgs/carrossel/1.png" alt="Distribuição de cestas">
+                <img src="../imgs/carrossel/1.png" alt="Distribuição de cestas">
+                <img src="../imgs/carrossel/1.png" alt="Distribuição de cestas">
+    
+            </div>
+        </section>
+
+        <section class="impacto">
+            <h2>Resultados</h2>
+            <ul>
+                <li>Mais de 100 famílias beneficiadas.</li>
+                <li>Redução da fome na comunidade XYZ.</li>
+                <li>Fortalecimento do vínculo comunitário.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AjudeAKI - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
