@@ -109,19 +109,41 @@
         <script>
     // Função para exibir os itens selecionados no resumo
     function mostrarResumo() {
-        const itensSelecionados = JSON.parse(localStorage.getItem('itensSelecionados')) || [];
-        const resumoContainer = document.querySelector('.bloco');
+    const itensSelecionados = JSON.parse(localStorage.getItem('itensSelecionados')) || [];
+    const resumoContainer = document.querySelector('.bloco');
 
-        itensSelecionados.forEach((item, index) => {
-            const itemElement = document.createElement('p');
-            itemElement.className = 'cb';
-            itemElement.textContent = `${index + 1}. ${item}`;
-            resumoContainer.appendChild(itemElement);
-        });
+    // Exibir os itens na página
+    itensSelecionados.forEach((item, index) => {
+        const itemElement = document.createElement('p');
+        itemElement.className = 'cb';
+        itemElement.textContent = `${index + 1}. ${item}`;
+        resumoContainer.appendChild(itemElement);
+    });
+
+    // Enviar o resumo para o backend automaticamente
+    if (itensSelecionados.length > 0) {
+        const resumo = itensSelecionados.join(', ');
+
+        fetch('salvarresumo.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ resumo }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (!data.success) {
+                console.error('Erro ao salvar o resumo:', data.message);
+            }
+        })
+        .catch(error => console.error('Erro:', error));
     }
+}
 
-    // Executa a função ao carregar a página
-    document.addEventListener('DOMContentLoaded', mostrarResumo);
+// Executa a função ao carregar a página
+document.addEventListener('DOMContentLoaded', mostrarResumo);
+
 </script>
 
       <button type="submit" class="buton">CONFIRMAR DOAÇÃO</button>
