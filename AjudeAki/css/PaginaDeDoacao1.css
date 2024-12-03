@@ -543,7 +543,7 @@ input[type="checkbox"]:checked + label img {
 .texto{
     font-weight: 300;
     font-style: normal;
-    font-family: "Phudu", system-ui;
+    font-family: "Poppins", system-ui;
     font-size: 15px;
     margin-left: 14%;
     text-transform: none;
@@ -573,6 +573,11 @@ input[type="checkbox"]:checked + label img {
 .confirmar:hover {
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
 }
+
+.subtopicos {
+    margin-left: 35px; /* Adiciona espaço à esquerda */
+}
+
 
 
 
