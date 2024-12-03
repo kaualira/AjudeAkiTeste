@@ -288,7 +288,59 @@ h1 {
 .btn-detalhes:hover {
     background-color: #021d7a;
 }
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 10px 0; 
+    width: 100%; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 70px;
+}
 
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
+}
 </style>
 <body>
     <nav class="navbar">
@@ -346,13 +398,13 @@ h1 {
             <div class="ong-card">
                 <h2>Coração Solidário</h2>
                 <p>Recebido: R$ 10.000</p>
-                <p>Resgate de animais, Programas para crianças</p>
+                <p>Aplicação: Resgate de animais, Programas para crianças</p>
                 <a href="coracaosolidario.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Maõs Que Acolhem</h2>
                 <p>Recebido: R$ 8.500</p>
-                <p>Aplicação:  Resgates, Inclusão social</p>
+                <p>Aplicação:  Resgates infantis, Inclusão social</p>
                 <a href="maosqueacolhem.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
@@ -364,7 +416,7 @@ h1 {
             <div class="ong-card">
                 <h2>Amigos da Vida</h2>
                 <p>Recebido: R$ 6.300</p>
-                <p>Aplicação:  Resgates, Apoio social</p>
+                <p>Aplicação: Resgates infantis, Apoio social</p>
                 <a href="amigosdavida.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
@@ -376,46 +428,57 @@ h1 {
             <div class="ong-card">
                 <h2>Vida em Comunhão</h2>
                 <p>Recebido: R$ 12.000</p>
-                <p>Aplicação: Reflorestamento</p>
+                <p>Aplicação: Resgate de animais, Programas para crianças</p>
                 <a href="detalhesMNO.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Amor em Quatro Patas</h2>
                 <p>Recebido: R$ 9.500</p>
-                <p>Aplicação: Programas esportivos</p>
+                <p>Aplicação: Cuidado animal, Apoio infantil</p>
                 <a href="detalhesPQR.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Sonhos Renovados</h2>
                 <p>Recebido: R$ 11.700</p>
-                <p>Aplicação: Auxílio a moradores de rua</p>
+                <p>Aplicação: Resgate de animais, Programas para crianças</p>
                 <a href="detalhesSTU.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Coração Aberto</h2>
                 <p>Recebido: R$ 4.800</p>
-                <p>Aplicação: Adoção de animais</p>
+                <p>Aplicação: Cuidado animal, Apoio infantil</p>
                 <a href="detalhesVWX.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Refúgio da Esperança</h2>
                 <p>Recebido: R$ 6.400</p>
-                <p>Aplicação: Construção de escolas</p>
+                <p>Aplicação: Cuidado animal, Apoio infantil</p>
                 <a href="detalhesYZA.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Futuro Brilhante</h2>
                 <p>Recebido: R$ 5.000</p>
-                <p>Aplicação: Apoio psicológico</p>
+                <p>Aplicação: Resgates infantis, Apoio social</p>
                 <a href="detalhesBCD.html" class="btn-detalhes">Ver Mais</a>
             </div>
             <div class="ong-card">
                 <h2>Vida em Harmonia</h2>
                 <p>Recebido: R$ 8.000</p>
-                <p>Aplicação: Cursos técnicos</p>
+                <p>Aplicação: Resgates infantis, Apoio social</p>
                 <a href="detalhesEFG.html" class="btn-detalhes">Ver Mais</a>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="footer-cote"></div>
+        <div class="footer-content">
+            <p class="p1">©2024 AjudeAKI</p>
+            <ul class="p2">
+                <li>Tell: (11)999999999</li>
+                <li>Email: AjudeAKI@gmail.com</li>
+                <li>Instagram: @ajudeaki_</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
