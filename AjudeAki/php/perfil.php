@@ -90,21 +90,23 @@ if ($result->num_rows === 1) {
 </head>
 <body>
     <div class="container">
-        <main class="profile-content">
-        <p class="Titulo">Perfil</p>
-            <div class="profile-header">
+    <main class="profile-content">
+    <p class="Titulo">Perfil</p>
+    <div class="profile-header">
+        <div class="photo-container">
             <div class="photo">
-    <img src="uploads/<?= htmlspecialchars($usuario['foto'] ?? 'default-profile.png'); ?>" alt="Foto do usuário">
-    <form action="upload_foto.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="foto" accept="image/*">
-        <div class="photo">
-    <img 
-        src="<?= htmlspecialchars($usuario['foto'] ?? 'uploads/default-profile.png'); ?>" 
-        alt="Foto do usuário" 
-        style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-</div>
-</div>
+                <img 
+                    src="<?= htmlspecialchars($usuario['foto'] ?? 'uploads/default-profile.png'); ?>" 
+                    alt="Foto do usuário" 
+                   >
             </div>
+            <form action="upload_foto.php" method="POST" enctype="multipart/form-data">
+                <input type="file" name="foto" accept="image/*" class="upload-button">
+            </form>
+        </div>
+    </div>
+</main>
+
 
                 <div class="info">
                     <h2><?= htmlspecialchars($usuario['nome']); ?></h2>
