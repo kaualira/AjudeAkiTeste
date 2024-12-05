@@ -195,7 +195,7 @@
 
 .a2 {
     position: absolute;
-    left: 600px;
+    left: 570px;
     top: 165px;
     color: #0232B5;
     font-weight: 300;
@@ -402,8 +402,8 @@
 }
 
 .d p {
-    margin-left: 629px;
-    font-size: 25px;
+    margin-left: 560px;
+    font-size: 27px;
     color: #0232B5;
     font-family: "Phudu", system-ui;
     font-weight: 700;
@@ -412,8 +412,8 @@
 .checkbox-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    column-gap: 90px;
-    row-gap: 5px; 
+    column-gap: 120px;
+    row-gap: 8px; 
     justify-items: center; /* Centraliza as caixas de seleção horizontalmente */
     align-items: center; /* Centraliza as caixas de seleção verticalmente */
     padding: 20px;
@@ -421,7 +421,7 @@
     border-radius: 10px; /* Bordas arredondadas */
     max-width: 800px; /* Largura máxima do contêiner */
     width: 300%; /* Largura responsiva */
-    margin-left: 21%;
+    margin-left: 20%;
 }
 
 .checkbox-item {
@@ -433,8 +433,8 @@
     border: 2px solid #0232B5; /* Borda inicial azul */
    background-color: white;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave */
-    width: 120%;
-    height: 70%;
+    width: 130%;
+    height: 80%;
     margin-bottom: -10px;
     cursor: pointer; /* Indica que é clicável */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra abaixo do input */
@@ -555,9 +555,9 @@ input[type="checkbox"]:checked + label img {
     background-color: #0232B5;
     color: white;
     border: none;
-    margin-left: 40%;
+    margin-left: 44%;
     width: 13%;
-    height: 25%;
+    height: 28%;
     border-radius: 5px;
     font-weight: 400;
     font-style: normal;
