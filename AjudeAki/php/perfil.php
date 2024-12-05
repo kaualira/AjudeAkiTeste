@@ -95,13 +95,12 @@ if ($result->num_rows === 1) {
     <div class="profile-header">
         <div class="photo-container">
             <div class="photo">
-                <img 
-                    src="<?= htmlspecialchars($usuario['foto'] ?? 'uploads/default-profile.png'); ?>" 
-                    alt="Foto do usuário" 
-                   >
+            <img src="<?= htmlspecialchars($usuario['foto'] ?? 'uploads/default-profile.png'); ?>" alt="Foto do usuário">
+
             </div>
             <form action="upload_foto.php" method="POST" enctype="multipart/form-data">
                 <input type="file" name="foto" accept="image/*" class="upload-button">
+                <button type="submit" name="upload">Upload</button>
             </form>
         </div>
     </div>

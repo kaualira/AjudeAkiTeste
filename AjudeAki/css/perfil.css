@@ -392,7 +392,6 @@ body, html {
     margin-left: 100px;
 }
 
-<<<<<<< HEAD
 
 .photo {
     display: flex; 
@@ -402,22 +401,40 @@ body, html {
 }
 
 .profile-photo {
-    width: 150px;
-    height: 150px;
-=======
+    width: 100px;
+    height: 100px;
+}
+
 .photo img {
-    width: 25vw;  /* Ajusta o tamanho de acordo com a largura da tela */
-    height: 25vw;
-    max-width: 200px; /* Limita o tamanho máximo */
-    max-height: 200px;
->>>>>>> e4436beae888be32f9d41fc27fd94edafea58848
+    width: 19%; 
+    height: 19%;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     object-fit: cover;
 }
-<<<<<<< HEAD
 
-.profile-header{
 
+button[name="upload"] {
+    background-color: #0232B5; 
+    color: white; 
+    padding: 7px 18px; 
+    font-size: 12px; 
+    border: none; 
+    border-radius: 7px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
 }
-=======
->>>>>>> e4436beae888be32f9d41fc27fd94edafea58848
+
+/* Efeito de hover */
+button[name="upload"]:hover {
+    background-color: #45a049; 
+}
+
+/* Efeito de foco */
+button[name="upload"]:focus {
+    outline: none; /* Remove a borda de foco */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave */
+}
