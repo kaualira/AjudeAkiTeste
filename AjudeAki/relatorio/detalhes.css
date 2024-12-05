@@ -249,6 +249,7 @@ section.informacoes .card h2 {
 
 section.galeria {
     text-align: center;
+    margin-left: 4%;
 }
 
 section.galeria h2 {
@@ -256,6 +257,7 @@ section.galeria h2 {
     margin-bottom: 1em;
     color: #0232B5;
     margin-top: 30px;
+    
 }
 
 section.galeria .fotos {
@@ -267,7 +269,7 @@ section.galeria .fotos {
 }
 
 section.galeria .fotos img {
-    width: 25%;
+    width: 27%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
