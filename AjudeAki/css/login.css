@@ -52,7 +52,7 @@
 
 
 .forms{
-    border-radius: 5px;
+    border-radius: 10px;
     width: 70%; 
     height: 10%;
     padding: 1%;
@@ -60,6 +60,13 @@
     margin-left: 3%;
     margin-top: 1%;
     margin-bottom: 6px; 
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #A09797;
+    letter-spacing: 1px; 
+
   
 }
 

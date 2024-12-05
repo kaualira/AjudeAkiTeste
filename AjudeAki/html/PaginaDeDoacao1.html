@@ -6,8 +6,9 @@
     <title>AjudeAki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/PaginaDeDoacao1.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <nav class="navbar">
@@ -84,9 +85,9 @@
             <!-- Dropdown principal, que infernal pra fazer, não me pergunta do porque tem um fundo cinza quase invisivel nele, se souber resolver, resolve, se não, não me enche >:( -->
             <div class="dropdown">
                 
-                <button class="dropbtn">Doar materiais</button>
+                <button class="dropbtn">Doar em materiais</button>
                 <div class="dropdown-content">
-                    <a href="#" onclick="goToPage('doacaoPixECartao.html')">Doar em dinheiro</a>
+                    <a href="doacaoPixECartao.html" onclick="goToPage('doacaoPixECartao.html')">Doar em dinheiro</a>
                 </div>
             </div>
             
@@ -110,87 +111,134 @@
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox1">
             <label for="checkbox1">
-                <img src="../imgs/doacao/credito.jpg" alt="Roupas Infantis">
+                <img src="../imgs/necessidades/roupainfantil.png" alt="Roupas Infantis">
                 <span>ROUPAS INFANTIS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox2">
             <label for="checkbox2">
-                <img src="../imgs/doacao/credito.jpg" alt="Cabelo">
+                <img src="../imgs/necessidades/cabelo.png" alt="Cabelo">
                 <span>CABELO</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox3">
             <label for="checkbox3">
-                <img src="../imgs/doacao/credito.jpg" alt="Roupas Adultas">
+                <img src="../imgs/necessidades/roupaadulta.png" alt="Roupas Adultas">
                 <span>ROUPAS ADULTAS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox4">
             <label for="checkbox4">
-                <img src="../imgs/doacao/credito.jpg" alt="Materiais para Escritório">
+                <img src="../imgs/necessidades/materialdeescritório.png" alt="Materiais para Escritório">
                 <span>MATERIAIS PARA ESCRITÓRIO</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox5">
             <label for="checkbox5">
-                <img src="../imgs/doacao/credito.jpg" alt="Alimentos">
+                <img src="../imgs/necessidades/alimento.png" alt="Alimentos">
                 <span>ALIMENTOS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox6">
             <label for="checkbox6">
-                <img src="../imgs/doacao/credito.jpg" alt="Móveis">
+                <img src="../imgs/necessidades/móveis.png" alt="Móveis">
                 <span>MÓVEIS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox7">
             <label for="checkbox7">
-                <img src="../imgs/doacao/credito.jpg" alt="Jogos/Brinquedos">
+                <img src="../imgs/necessidades/jogos.png" alt="Jogos/Brinquedos">
                 <span>JOGOS/BRINQUEDOS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox8">
             <label for="checkbox8">
-                <img src="../imgs/doacao/credito.jpg" alt="Eletrônicos">
+                <img src="../imgs/necessidades/eletrônicos.png" alt="Eletrônicos">
                 <span>ELETRÔNICOS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox9">
             <label for="checkbox9">
-                <img src="../imgs/doacao/credito.jpg" alt="Ração para Cães">
+                <img src="../imgs/necessidades/cachorro.png" alt="Ração para Cães">
                 <span>RAÇÃO PARA CÃES</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox10">
             <label for="checkbox10">
-                <img src="../imgs/doacao/credito.jpg" alt="Ração para Gatos">
+                <img src="../imgs/necessidades/gato.png" alt="Ração para Gatos">
                 <span>RAÇÃO PARA GATOS</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox11">
             <label for="checkbox11">
-                <img src="../imgs/doacao/credito.jpg" alt="Acessórios para Cães">
+                <img src="../imgs/necessidades/coleira.png" alt="Acessórios para Cães">
                 <span>ACESSÓRIOS PARA CÃES</span>
             </label>
         </div>
         <div class="checkbox-item">
             <input type="checkbox" id="checkbox12">
             <label for="checkbox12">
-                <img src="../imgs/doacao/credito.jpg" alt="Acessórios para Gatos">
+                <img src="../imgs/necessidades/bola.png" alt="Acessórios para Gatos">
                 <span>ACESSÓRIOS PARA GATOS</span>
             </label>
+
         </div>
     </div>
+    <div class="texto">
+        <p>*PARA DOAR SEU CABELO, HÁ ALGUNS CRITÉRIOS A SEREM SEGUIDOS:</p>
+        <p><strong>1. Comprimento mínimo: </strong>Geralmente, é necessário que o cabelo tenha entre 15 cm a 25 cm.</p>
+        <p><strong> 2 . Estado do cabelo:</strong> O cabelo deve estar em bom estado. É aceito:</p>
+        <ul class="subtopicos">
+            <li>Apenas cabelos naturais (sem tintura)</li>
+            <li>Cabelos sem química excessiva (como relaxamentos, alisamentos permanentes ou progressivas), já que esses processos podem danificar a estrutura do fio;</li>
+            <li>Cabelos grisalhos são aceitos.</li>
+        </ul>
+        <p> <strong> 3. Higiene: </strong> O cabelo precisa estar limpo e seco no momento do corte para evitar mofo ou degradação durante o armazenamento.</p>
+      <p><strong>4. Forma de cortar: </strong> Normalmente, o corte deve ser feito em uma ou várias tranças ou rabos de cavalo amarrados com elásticos, para manter a organização dos fios.</p>
+        </div>
+
+    <button class="confirmar" onclick="salvarSelecionados()">PRÓXIMA ETAPA</button>
+
+<script>
+    // Função para salvar os itens selecionados
+    function salvarSelecionados() {
+        const checkboxes = document.querySelectorAll('.checkbox-item input[type="checkbox"]');
+        const selecionados = [];
+
+        checkboxes.forEach((checkbox) => {
+            if (checkbox.checked) {
+                selecionados.push(checkbox.nextElementSibling.textContent.trim());
+            }
+        });
+
+        // Salva os itens selecionados no localStorage
+        localStorage.setItem('itensSelecionados', JSON.stringify(selecionados));
+
+        // Redireciona para a página de solicitação de transporte
+        window.location.href = '../php/SoliciteTransporte.php';
+    }
+</script>
+<footer>
+    <div class="footer-cote"></div>
+    <div class="footer-content">
+        <p class="p1">©2024 AjudeAKI</p>
+        <ul class="p2">
+            <li>Tell: (11)999999999</li>
+            <li>Email: AjudeAKI@gmail.com</li>
+            <li>Instagram: @ajudeaki_</li>
+        </ul>
+    </div>
+</footer>
 </body> 
 </html>
+

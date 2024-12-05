@@ -221,10 +221,23 @@ body {
     font-family: 'Phudu', sans-serif;
     font-style: normal;
     font-size: 18px;
-    display: flex;
-    align-items: center;
-    
-    
+   text-align: center;
+}
+
+.tt3{
+    font-weight: 300;
+    font-family: 'Phudu', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+
+}
+
+.tt4{
+    font-weight: 300;
+    font-family: 'Phudu', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+
 }
 .resumo-doacao {
     border: 1px solid #0232B5;
@@ -314,4 +327,12 @@ margin-left: -50%;
 .B{ 
 text-align: center;
 margin-top: 20%;
+}
+
+.dindin{
+    border: none;
+    font-family: "Poppins", system-ui;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
 }

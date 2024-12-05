@@ -1,37 +1,38 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+session_start();
+include('conexao.php');
+
+// Teste inicial: verificar se dados estão chegando
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    session_start();
+    print_r($_POST); // Ver o que está sendo enviado
+    exit;
+}
 
-    // Conexão com o banco de dados
-    require_once 'conexao.php';
+// Verificar conexão
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
 
-    // Obtém os dados do formulário
-    $usuario_id = intval($_POST['usuario_id']);
-    $valor = $_POST['valor']; // Pegue o valor diretamente
+if (isset($_POST['categorias']) && !empty($_POST['categorias'])) {
+    // Iterar sobre as categorias e inseri-las no banco
+    foreach ($_POST['categorias'] as $categoria) {
+        // Escapar a string para evitar SQL Injection
+        $categoria = $conn->real_escape_string($categoria);
 
-    // Validar se o valor é numérico e não vazio
-    if (empty($valor) || !is_numeric(str_replace(',', '.', $valor))) {
-        echo "Valor da doação inválido.";
-        exit;
+        // Query para inserir no banco
+        $sql = "INSERT INTO doacoesmaterias (categoria) VALUES ('$categoria')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Categoria '$categoria' inserida com sucesso!<br>";
+        } else {
+            echo "Erro ao inserir categoria '$categoria': " . $conn->error . "<br>";
+        }
     }
-    
-    $metodo_pagamento = $_POST['metodo_pagamento'];
 
-    // Validar os dados
-    if (!in_array($metodo_pagamento, ['Pix', 'Cartão de Débito'])) {
-        die("Método de pagamento inválido.");
-    }
-
-    if ($valor <= 0) {
-        die("Valor da doação inválido.");
-    }
-
-    // Inserir no banco de dados
-    $stmt = $pdo->prepare("INSERT INTO doacoes (usuario_id, valor, metodo_pagamento) VALUES (?, ?, ?)");
-    $stmt->execute([$usuario_id, $valor, $metodo_pagamento]);
-
-    // Redirecionar para a página de confirmação
-    header("Location: ../html/DoacaoRealizada.html");
-    exit();
+    $conn->close();
+} else {
+    echo "Nenhuma categoria foi selecionada.";
 }
 ?>

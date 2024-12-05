@@ -188,7 +188,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+  
     background-color: #ffff;
     text-align: center;
     padding: 20px;
@@ -196,8 +196,11 @@
   
 
   main h2 {
-    font-size: 1.8rem;
-    color: #0052cc;
+    color: #0232B5;
+ 
+    font-weight: 600;
+    font-family: 'Phudu', sans-serif;
+    font-size: 30px;
     margin-bottom: 20px;
     margin-top: 30px;
   }
@@ -209,7 +212,7 @@
     border-radius: 15px;
     border: 2px solid #0052cc;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
+    max-width: 700px;
     text-align: left;
   }
   
@@ -218,22 +221,36 @@
     color: #0052cc;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Phudu", system-ui;
   }
   
   .a .linha {
     display: flex;
     justify-content: space-between; /* Espaçamento entre texto e valor */
     margin-bottom: 10px;
-    font-size: 1rem;
+ 
+    font-weight: 400;
+    font-family: 'POPPINS', sans-serif;
+    font-style: normal;
+    font-size: 15px;
   }
   
   .a .linha strong {
     font-weight: bold;
-    color: #333;
+ 
+    font-weight: 500;
+    font-family: 'POPPINS', sans-serif;
+    font-style: normal;
+    font-size: 15px;
   }
   .b{
     font-size: 1.8rem;
-    color: #0052cc;
+    color: #0232B5;
+    font-weight: 600;
+    font-family: 'Phudu', sans-serif;
+    font-size: 27px;
   }
   
   /* As caixas que dá pra escrever */
@@ -241,11 +258,16 @@
     max-width: 600px;
     margin: 20px auto;
     text-align: left;
+    font-weight: 400;
+    font-family: 'POPPINS', sans-serif;
+    font-style: normal;
+    font-size: 15px;
   }
   
   /* A caixa do noem impresso */
   .linha-unica {
     margin-bottom: 20px;
+    
   }
   
   .linha-unica label {
@@ -260,6 +282,7 @@
     border: 2px solid #0052cc;
     border-radius: 8px;
     background: none;
+    
     
   }
   
@@ -290,7 +313,7 @@
   /* Botão azul la debaixo */
   button {
     width: auto;
-    height: 60px;
+    height: 40px;
     padding: 12px 30px; 
     margin-top: 20px;
     background: #0052cc;
@@ -302,6 +325,12 @@
     display: block; 
     margin-left: auto;
     margin-right: auto;
+    font-weight: 400;
+    font-family: 'PHUDU', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona a sombra */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; /* Suaviza a mudança de sombra */
   }
   
   button:hover {

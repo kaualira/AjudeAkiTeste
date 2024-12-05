@@ -66,9 +66,9 @@
         <div class="resumo-doacao">
         <form id="formPix" method="POST" action="salvarDoacao.php">
             <p class="tt2">RESUMO DA DOAÇÃO</p>
-            <p>Instituição: Coração Solidário</p>
+            <p class="tt3">Instituição: Coração Solidário</p>
             
-            <p>Valor da doação: 
+            <p class="tt4">Valor da doação: 
     <span>R$</span> 
     <input type="text" class="dindin" name="valor" id="valorDoacao" placeholder="0,00" required value="">
 </p>

@@ -308,14 +308,37 @@
     font-family: 'Phudu', sans-serif;
     font-size: 15px;
     border-radius: 10px;
-    margin-top: 2%;
-    margin-bottom: 5%; 
-    margin-right: 2%;
+    margin-top: 3%;
     border: none;
     text-align: center;
     margin: 0 auto;
+    margin-left: 45%;
+    margin-bottom: 6%;
+
 }
 
+.info {
+    margin-top: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    font-family: "Phudu", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+
+}
+.info h2{
+    font-family: "Phudu", system-ui;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+   
+    }
+    
 footer {
     background-color: #0232B5; 
     color: white;
@@ -365,10 +388,11 @@ body, html {
     padding: 0;
 }
 
-.profile-content{
-   
+.photo-container{
+    margin-left: 100px;
 }
 
+<<<<<<< HEAD
 
 .photo {
     display: flex; 
@@ -380,12 +404,20 @@ body, html {
 .profile-photo {
     width: 150px;
     height: 150px;
+=======
+.photo img {
+    width: 25vw;  /* Ajusta o tamanho de acordo com a largura da tela */
+    height: 25vw;
+    max-width: 200px; /* Limita o tamanho máximo */
+    max-height: 200px;
+>>>>>>> e4436beae888be32f9d41fc27fd94edafea58848
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #ccc;
-    margin-left: 50%;
 }
+<<<<<<< HEAD
 
 .profile-header{
 
 }
+=======
+>>>>>>> e4436beae888be32f9d41fc27fd94edafea58848

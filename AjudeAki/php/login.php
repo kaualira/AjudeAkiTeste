@@ -26,7 +26,7 @@
                 <img src="../imgs/LoginCadastro/PerfilBranco.png" class="perfil">
                 <input type="text" name="email" class="forms" placeholder="Email" required>
                 <input type="password" name="senha" class="forms" placeholder="Senha" required>
-                <button class='botao1'>login </button>
+                <button class='botao1'>Entrar </button>
                 <h1 class="text"> ou
                 <a href="cadastro.php">cadastre-se aqui</a></h1>
             </div>

@@ -286,6 +286,11 @@ input[type="date"] {
 background-color: #A2BBFF80;
 width: 35%;
 margin-right: 25%;
+font-family: 'Phudu', sans-serif;
+font-size: 14px;
+font-style: normal;
+
+
 }
 
 
@@ -295,6 +300,9 @@ select {
         border: none;
         margin: 1%;
         width: 35%;
+        font-family: 'Phudu', sans-serif;
+        font-size: 14px;
+        font-style: normal;
        
     }
     
@@ -379,3 +387,4 @@ body, html {
     margin: 0;
     padding: 0;
 }
+

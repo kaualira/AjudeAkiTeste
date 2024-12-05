@@ -189,14 +189,20 @@
     margin-left: 20vw; */
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .a2 {
     position: absolute;
-    left: 685px;
-    top: 125px;
+    left: 600px;
+    top: 165px;
     color: #0232B5;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Phudu", system-ui;
+    font-size: 14px;
+
 }
 
 .a3 {
@@ -226,7 +232,7 @@
 
 .b img {
     width: 190px;
-    margin-left: -186px;
+    margin-left: -300px;
 }
 
 /* .b p {
@@ -292,6 +298,15 @@
 
 .dropdown:hover .dropbtn {
     background-color: #ddd;
+}
+
+.dropbtn{
+    border: none;
+    background-color: white;
+    font-family: "Phudu", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .container-botao {
@@ -381,14 +396,14 @@
     height: 35px;
     margin-left: 45px; /* Ajustando a margem para a esquerda */
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     justify-content: start;
     align-items: flex-start;
 }
 
 .d p {
     margin-left: 629px;
-    font-size: 22px;
+    font-size: 25px;
     color: #0232B5;
     font-family: "Phudu", system-ui;
     font-weight: 700;
@@ -397,16 +412,16 @@
 .checkbox-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-    gap: 20px; /* Espaçamento entre os itens */
+    column-gap: 90px;
+    row-gap: 5px; 
     justify-items: center; /* Centraliza as caixas de seleção horizontalmente */
     align-items: center; /* Centraliza as caixas de seleção verticalmente */
     padding: 20px;
     background-color: white; /* Cor de fundo opcional */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
     max-width: 800px; /* Largura máxima do contêiner */
-    width: 100%; /* Largura responsiva */
-    margin-left: 20%;
+    width: 300%; /* Largura responsiva */
+    margin-left: 21%;
 }
 
 .checkbox-item {
@@ -416,11 +431,13 @@
     padding: 0px;
     border-radius: 27px;
     border: 2px solid #0232B5; /* Borda inicial azul */
-    background-color: #f9f9f9; /* Cor de fundo inicial */
+   background-color: white;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave */
-    width: 360px;
-    margin-bottom: 10px;
+    width: 120%;
+    height: 70%;
+    margin-bottom: -10px;
     cursor: pointer; /* Indica que é clicável */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra abaixo do input */
 }
 
 
@@ -455,11 +472,7 @@
     
 }
 
-/* Quando o checkbox estiver marcado, a div inteira muda a borda */
-.checkbox-item input[type="checkbox"]:checked + label {
-    border-color: #a2a2a2; /* Borda laranja */
-    box-shadow: 0 0 10px rgba(0, 213, 255, 0.7); /* Efeito de brilho laranja */
-}
+
 
 /* Label estilizado, ocupando toda a área da div */
 .checkbox-item label {
@@ -473,6 +486,9 @@
     cursor: pointer;
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 27px;
+    font-family: "Phudu", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Efeito hover na div */
@@ -493,4 +509,119 @@
 input[type="checkbox"]:checked + label img {
     border-color: #28a745; /* Cor verde de seleção */
     transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+.checkbox-item label img {
+    width: 9%; /* Largura desejada */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Garante que não quebre a linha */
+    margin: 0 auto; /* Centraliza a imagem */
+    
+}
+
+
+.checkbox-item:focus {
+    background-color: #f0f8ff; /* Cor de fundo ao focar */
+    outline: none; /* Remove o contorno padrão */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+.checkbox-item input[type="checkbox"] {
+    display: none; /* Esconde o checkbox padrão */
+}
+
+
+
+.checkbox-item input[type="checkbox"]:focus + label,
+.checkbox-item input[type="checkbox"]:checked + label {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+    width: 100%;
+    height: 40%;
+}
+
+.texto{
+    font-weight: 300;
+    font-style: normal;
+    font-family: "Poppins", system-ui;
+    font-size: 15px;
+    margin-left: 14%;
+    text-transform: none;
+    margin-top: 15px;
+}
+
+.confirmar{
+    margin-top: 13px;
+    background-color: #0232B5;
+    color: white;
+    border: none;
+    margin-left: 40%;
+    width: 13%;
+    height: 25%;
+    border-radius: 5px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Poppins", system-ui;
+    font-size: 17px;
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: box-shadow 0.3s ease; /* Suavidade na transição */
+    margin-bottom: 20px;
+}
+
+.confirmar:hover {
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
+.subtopicos {
+    margin-left: 35px; /* Adiciona espaço à esquerda */
+}
+
+
+
+
+footer {
+    background-color: #0232B5; 
+    color: white;
+    padding: 20px 0; 
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    position: relative; 
+}
+
+.p1 {
+    /* Centraliza */
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+    font-family: "Poppins", system-ui;
+font-weight: 300;
+font-style: normal;
+}
+
+.p2 {
+     /* Remove marcadores e margens, alinha à direita */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: right; 
+    margin-left: auto; 
+    font-family: "Poppins", system-ui;
+font-weight: 300;
+font-style: normal;
+}
+
+.p2 li {
+    /* Espaçamento entre os itens da lista */
+    margin-bottom: 5px; 
 }
