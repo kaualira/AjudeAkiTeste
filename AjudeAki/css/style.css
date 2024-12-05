@@ -548,6 +548,42 @@ img {
     }
     }
 
+    .nossas-acoes3 {
+        margin-left: 4em;
+        /* background-color: aqua; */
+        height: 8em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Phudu", system-ui;
+        color: #0232B5;
+        font-weight: 900;
+        
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .btn-relatorio {
+        display: inline-block;
+        width: 200px;
+        height:30px ;
+        background-color: #0232B5;
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin-top: 1em; 
+        text-align: center;
+        padding-top: 0.5em; 
+        margin-left: 430px;
+    }
+    
+    .btn-relatorio:hover {
+        background-color: #012f91;
+    }
+
     footer {
         background-color: #0232B5; 
         color: white;

@@ -109,7 +109,6 @@ if ($result->num_rows === 1) {
 
                 <div class="info">
                     <h2><?= htmlspecialchars($usuario['nome']); ?></h2>
-                    <p><?= $usuario['idade'] ?? '00'; ?> anos</p>
                     <div class="stats">
                         <p>00 Doações Materiais</p>
                         <p>R$ 00,00 Doações em Dinheiro</p>
