@@ -600,3 +600,11 @@ img {
         /* Espaçamento entre os itens da lista */
         margin-bottom: 5px; 
     }
+    .p3{
+        max-width: 150px; /* Reduz o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    margin: 30px; /* Espaçamento ao redor da imagem */
+    float: left; 
+    width: 6%;
+
+    }
