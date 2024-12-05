@@ -641,6 +641,7 @@ img {
     height: auto; /* Mantém a proporção */
     margin: 30px; /* Espaçamento ao redor da imagem */
     float: left; 
-    width: 6%;
+    width: 3%;
+    margin-left: 60px;
 
     }
